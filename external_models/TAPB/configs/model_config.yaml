@@ -1,0 +1,22 @@
+DrugEncoder:
+  model: 'RoBert'
+  d_model : 256
+  n_layer : 3
+  n_head : 8
+  attention : 'OriginMHA'
+  activation : 'gelu'
+  dropout : 0.1
+  vocab_size : 2362
+
+PrEncoder:
+  d_model : 1280
+
+TransformerDeocder:
+  d_model: 256
+  n_layer: 3
+  n_head: 8
+  attention: 'OriginMHA'
+  activation: 'gelu'
+  dropout : 0.1
+
+

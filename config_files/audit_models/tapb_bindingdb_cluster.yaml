@@ -1,0 +1,9 @@
+MODEL:
+  BASE:
+    MODEL_TYPE: tapb
+    EXTERNAL_CODE_ROOT: external_models/TAPB
+    EXTERNAL_CHECKPOINT: "external_models/TAPB/results/bindingdb/cluster/seed_${TAPB_SEED}/best_epoch_*.pth"
+    EXTERNAL_CONFIG: external_models/TAPB/configs/model_config.yaml
+    EXTERNAL_TRAIN_CONFIG: external_models/TAPB/configs/train_config.yaml
+    EXTERNAL_DATA_ROOT: external_models/TAPB/datasets/bindingdb/cluster
+    EXTERNAL_TOKENIZER: external_models/TAPB/models/drug/molformer

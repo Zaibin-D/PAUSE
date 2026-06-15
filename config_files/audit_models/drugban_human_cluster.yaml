@@ -1,0 +1,6 @@
+MODEL:
+  BASE:
+    MODEL_TYPE: drugban
+    EXTERNAL_CODE_ROOT: external_models/DrugBAN
+    EXTERNAL_CHECKPOINT: "external_models/DrugBAN/results/human/cold/seed_${DRUGBAN_SEED}/best_model_epoch_*.pth"
+    EXTERNAL_CONFIG: external_models/DrugBAN/configs/DrugBAN_PAUSE_Human.yaml

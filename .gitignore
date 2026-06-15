@@ -1,0 +1,57 @@
+# IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Raw datasets and generated feature stores
+datasets/
+external_models/**/datasets/
+
+# Model weights and training artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.pkl
+*.pickle
+*.npy
+*.npz
+/results/
+external_models/**/results/
+external_models/**/checkpoints/
+
+# Recomputable audit caches; formal aggregate results remain versioned
+audit_framework/cache/
+
+# Unpublished manuscript
+manuscript/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+~$*
