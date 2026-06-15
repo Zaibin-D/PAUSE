@@ -775,6 +775,75 @@ significantly:
 HGB does not establish dominance, but its positive target mean identifies
 ranker choice as a plausible future target-domain improvement.
 
+### Completed HGB Heterogeneity Audit
+
+The mandatory HGB stability analysis was completed from the frozen
+strengthening-experiment CSVs without retraining, tuning, or reading test
+outcomes for selection. The deterministic command is:
+
+```bash
+python audit_framework/scripts/analyze_hgb_heterogeneity.py \
+  --bootstrap-resamples 20000 \
+  --bootstrap-seed 2026
+```
+
+Outputs are under:
+
+```text
+audit_framework/cache/diagnostic_results/strengthening_experiments/
+  hgb_heterogeneity/
+```
+
+The analysis validates unique run keys, verifies that budget-independent AUPRC
+is invariant across the repeated review fractions, averages the four fixed
+policies within each model-dataset-seed cluster, and then applies one unified
+20,000-resample stratified bootstrap. It reconstructs 360 policy rows and 90
+model-dataset-seed-grouping clusters. The prior HGB test means are reproduced
+exactly.
+
+The overall paired results are:
+
+| Grouping | Validation HGB minus PAUSE | Test HGB minus PAUSE | Same-direction clusters |
+|---|---:|---:|---:|
+| drug | -0.0914 (-0.2909 to +0.0376) | +0.0130 (-0.0651 to +0.0968) | 63.9% |
+| target | -0.1530 (-0.3043 to -0.0614) | +0.1264 (-0.0206 to +0.2529) | 38.5% |
+
+Only 33.3% of paired drug clusters and 10.3% of paired target clusters are
+positive on both validation and test. Target validation is negative for all
+three models, all five seeds on average, and all three datasets. Its positive
+test mean therefore does not have validation support.
+
+Dataset heterogeneity is decisive:
+
+| Grouping | Dataset | Validation delta | Test delta |
+|---|---|---:|---:|
+| drug | BindingDB | +0.0770 | +0.1009 |
+| drug | BioSNAP | -0.0224 | +0.0544 |
+| drug | Human | -0.4945 | -0.1226 |
+| target | BindingDB | -0.0629 | +0.3111 |
+| target | BioSNAP | -0.0381 | +0.2124 |
+| target | Human | -0.4163 | -0.1577 |
+
+Model leave-one-out test means remain positive but all intervals include zero.
+Dataset leave-one-out is less stable: removing Human makes the target test mean
+strongly positive (+0.2582, +0.1911 to +0.3406), while removing either BioSNAP
+or BindingDB leaves a test interval crossing zero. In every target
+leave-one-dataset-out analysis, validation remains negative.
+
+Human exact-pair deduplication strengthens the negative result:
+
+| Grouping | Ordinary Human test delta | Pair-deduplicated delta |
+|---|---:|---:|
+| drug | -0.1226 (-0.1858 to -0.0677) | -0.1455 (-0.2141 to -0.0901) |
+| target | -0.1577 (-0.2184 to -0.1033) | -0.1734 (-0.2412 to -0.1162) |
+
+The fixed HGB diagnostic therefore fails validation/test directional
+consistency, fails Human robustness, and shows material dataset dependence.
+It must remain non-primary. It cannot replace validation-selected PAUSE or be
+used to claim a generally stronger ranker. The supported interpretation is a
+negative robustness result: nonlinear fitting can produce large apparent test
+gains in BioSNAP and BindingDB while degrading validation and Human transfer.
+
 Validation-only feature-block permutation gives actual U+P+E minus permuted
 fold AUPRC:
 
@@ -796,8 +865,8 @@ transferable drug-domain support. They do not justify claiming that cold-target
 auditing is solved, changing the five primary profiles, or modifying formal E.
 The manuscript and `audit_framework/results/audit/` remain unchanged.
 
-The test suite now contains 28 passing tests: 24 core/sharding tests and four
-strengthening-experiment tests.
+The test suite now contains 31 passing tests: 24 core/sharding tests, four
+strengthening-experiment tests, and three HGB heterogeneity-analysis tests.
 
 ## 14. Ablation Inventory and Manuscript Readiness
 
@@ -953,10 +1022,10 @@ performed while writing:
    U+E, U+P+E, and validation-selected PAUSE for validation and test under both
    grouping axes.
 3. Report P/E permutation separately from the primary profile ablation.
-4. Complete the HGB heterogeneity audit using existing outputs:
-   validation/test direction, model/dataset/seed strata, leave-one-domain
-   sensitivity, and Human deduplication. This requires analysis only, not new
-   model tuning.
+4. HGB heterogeneity audit: completed using existing outputs. The analysis
+   covers validation/test direction, model/dataset/seed strata, leave-one-domain
+   sensitivity, and Human deduplication, and confirms that HGB must remain
+   non-primary.
 5. Generate the equal-action budget curve, cross-domain transfer figure, and
    compact robustness/limitation table.
 6. Build a claim-to-result matrix so every abstract and conclusion statement
@@ -982,11 +1051,10 @@ reveals a specific reviewer-critical gap and sufficient time remains.
 The recommended immediate order is:
 
 1. freeze the current experimental claims and tables;
-2. complete HGB stability analysis from existing outputs;
-3. build manuscript figures and the primary ablation table;
-4. rewrite Methods and Results from the frozen implementation;
-5. rewrite Abstract, Introduction, and Discussion around the supported claim;
-6. run mock review, statistical consistency, citation, and reproducibility
+2. build manuscript figures and the primary ablation table;
+3. rewrite Methods and Results from the frozen implementation;
+4. rewrite Abstract, Introduction, and Discussion around the supported claim;
+5. run mock review, statistical consistency, citation, and reproducibility
    checks.
 
 Decision: start writing immediately. Do not wait for another round of target
