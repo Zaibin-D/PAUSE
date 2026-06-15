@@ -1,0 +1,3 @@
+model,dataset,test_run,group_axis,confidence_source,delta_error_detection_auprc_vs_uncertainty,delta_review_error_rate_vs_uncertainty,delta_retained_accuracy_gain_vs_residual_vs_uncertainty
+PACE,biosnap,seed_4,drug,base,0.285457,0.236329,0.059097
+PACE,biosnap,seed_4,target,base,0.081258,0.064825,0.01626

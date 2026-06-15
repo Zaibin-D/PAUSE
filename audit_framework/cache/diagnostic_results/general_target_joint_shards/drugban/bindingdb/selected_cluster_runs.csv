@@ -1,0 +1,11 @@
+model,dataset,test_run,group_axis,confidence_source,delta_error_detection_auprc_vs_uncertainty,delta_review_error_rate_vs_uncertainty,delta_retained_accuracy_gain_vs_residual_vs_uncertainty
+DrugBAN,bindingdb,seed_4,drug,base,0.069669628117,0.053975113982,0.013447595021
+DrugBAN,bindingdb,seed_4,target,base,0.007468073154,0.013888888889,0.003496503497
+DrugBAN,bindingdb,seed_5,drug,base,0.168040717182,0.16051064524,0.039917560367
+DrugBAN,bindingdb,seed_5,target,base,-0.033030736195,-0.06309650053,-0.015683865684
+DrugBAN,bindingdb,seed_6,drug,base,0.34798254754,0.209624824684,0.052626358461
+DrugBAN,bindingdb,seed_6,target,base,0.0,0.0,0.0
+DrugBAN,bindingdb,seed_7,drug,base,0.392243464588,0.346797035797,0.086412928547
+DrugBAN,bindingdb,seed_7,target,base,0.0,0.0,0.0
+DrugBAN,bindingdb,seed_8,drug,base,0.629166666667,,
+DrugBAN,bindingdb,seed_8,target,base,-0.041666666667,,

@@ -1,0 +1,13 @@
+transfer_type,held_out_domain,group_axis,selected_profile,selection_reason,best_profile,best_mean,best_se,one_se_threshold,selected_source_mean,uncertainty_source_mean,selected_gain_vs_uncertainty,source_cluster_n
+leave_one_dataset_out,bindingdb,target,prior,global_one_standard_error,uncertainty_prior_support,0.416216666667,0.051599916248,0.364616750419,0.393114429487,0.280113179487,0.11300125,30
+leave_one_dataset_out,biosnap,target,uncertainty_prior_support,global_one_standard_error,uncertainty_prior_support,0.496603222222,0.044056147895,0.452547074327,0.496603222222,0.356867146667,0.139736075556,30
+leave_one_dataset_out,human,target,prior,global_one_standard_error,uncertainty_prior,0.334529089286,0.021229361858,0.313299727428,0.3334449375,0.300614637931,0.032830299569,30
+leave_one_dataset_out,bindingdb,drug,uncertainty_support,global_one_standard_error,uncertainty_support,0.515605481884,0.045736799419,0.469868682465,0.515605481884,0.310287615942,0.205317865942,30
+leave_one_dataset_out,biosnap,drug,uncertainty_support,global_one_standard_error,uncertainty_prior_support,0.594876178571,0.040343722501,0.554532456071,0.594141551587,0.365020396825,0.229121154762,30
+leave_one_dataset_out,human,drug,uncertainty_support,global_one_standard_error,uncertainty_support,0.470304946429,0.026417771872,0.443887174556,0.470304946429,0.271592220238,0.19871272619,30
+leave_one_model_out,DrugBAN,target,prior,global_one_standard_error,uncertainty_prior_support,0.401860623457,0.047614070706,0.354246552751,0.367896830247,0.30120614881,0.066690681437,30
+leave_one_model_out,PACE,target,prior,global_one_standard_error,uncertainty_prior_support,0.387921473333,0.036436103046,0.351485370288,0.380367616667,0.33479488141,0.045572735256,30
+leave_one_model_out,TAPB,target,prior,global_one_standard_error,uncertainty_prior_support,0.42505875,0.044655999229,0.380402750771,0.393994596154,0.299384875,0.094609721154,30
+leave_one_model_out,DrugBAN,drug,uncertainty_support,global_one_standard_error,uncertainty_support,0.507923963333,0.041984623582,0.465939339752,0.507923963333,0.313796503333,0.19412746,30
+leave_one_model_out,PACE,drug,uncertainty_support,global_one_standard_error,uncertainty_support,0.528753065217,0.038243683082,0.490509382136,0.528753065217,0.312893543478,0.215859521739,30
+leave_one_model_out,TAPB,drug,uncertainty_support,global_one_standard_error,uncertainty_prior_support,0.534627947917,0.035440128006,0.499187819911,0.526875732639,0.306881732639,0.219994,30

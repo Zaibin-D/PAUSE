@@ -1,0 +1,5 @@
+split,group_axis,measure,num_independent_runs,num_model_dataset_strata,mean,run_win_rate,ci_low,ci_high
+validation,target,delta_validation_fold_mean_auprc,39,9,0.007413906407,0.538461538462,-0.033718104004,0.046769078321
+validation,drug,delta_validation_fold_mean_auprc,36,9,0.021144883975,0.666666666667,-0.009311133731,0.054355161791
+test,target,delta_error_detection_auprc,41,9,0.031945553613,0.780487804878,0.004572778111,0.066628373354
+test,drug,delta_error_detection_auprc,41,9,0.037167469353,0.853658536585,0.011890756629,0.068332343179

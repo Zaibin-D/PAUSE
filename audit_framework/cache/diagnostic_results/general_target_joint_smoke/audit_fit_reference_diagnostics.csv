@@ -1,0 +1,9 @@
+model,dataset,test_run,group_axis,confidence_source,confidence_threshold,uncertainty_reject_fraction,review_fraction,reference_role,evaluation_role,reference_n,evaluation_n,reference_outcomes_used_for_support,evaluation_batch_appended_to_reference,reference_frozen_before_test_scoring,exact_pair_support_enabled_in_core,overlap_drug_count,overlap_target_count,overlap_pair_count
+PACE,biosnap,seed_4,target,base,0.8,0.1,0.2,fixed_validation_policy_residual,held_out_test_policy_residual,935,250,False,False,True,False,127,81,0
+PACE,biosnap,seed_4,target,base,0.8,0.2,0.2,fixed_validation_policy_residual,held_out_test_policy_residual,831,222,False,False,True,False,113,72,0
+PACE,biosnap,seed_4,target,base,0.9,0.1,0.2,fixed_validation_policy_residual,held_out_test_policy_residual,841,219,False,False,True,False,115,70,0
+PACE,biosnap,seed_4,target,base,0.9,0.2,0.2,fixed_validation_policy_residual,held_out_test_policy_residual,747,194,False,False,True,False,108,61,0
+PACE,biosnap,seed_4,drug,base,0.8,0.1,0.2,fixed_validation_policy_residual,held_out_test_policy_residual,935,250,False,False,True,False,127,82,0
+PACE,biosnap,seed_4,drug,base,0.8,0.2,0.2,fixed_validation_policy_residual,held_out_test_policy_residual,831,222,False,False,True,False,117,70,0
+PACE,biosnap,seed_4,drug,base,0.9,0.1,0.2,fixed_validation_policy_residual,held_out_test_policy_residual,841,219,False,False,True,False,117,69,0
+PACE,biosnap,seed_4,drug,base,0.9,0.2,0.2,fixed_validation_policy_residual,held_out_test_policy_residual,747,194,False,False,True,False,109,62,0

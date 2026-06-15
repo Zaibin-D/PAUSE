@@ -1,0 +1,10 @@
+model,dataset,out_dir,policies,profiles,candidate_rows,increment_rows,status
+DrugBAN,bindingdb,audit_framework\cache\diagnostic_results\general_target_joint_shards\drugban\bindingdb,40,12,480,1360,complete
+DrugBAN,biosnap,audit_framework\cache\diagnostic_results\general_target_joint_shards\drugban\biosnap,40,12,480,1360,complete
+DrugBAN,human,audit_framework\cache\diagnostic_results\general_target_joint_shards\drugban\human,40,12,480,1360,complete
+PACE,bindingdb,audit_framework\cache\diagnostic_results\general_target_joint_shards\pace\bindingdb,40,12,480,1360,complete
+PACE,biosnap,audit_framework\cache\diagnostic_results\general_target_joint_shards\pace\biosnap,40,12,480,1360,complete
+PACE,human,audit_framework\cache\diagnostic_results\general_target_joint_shards\pace\human,40,12,480,1360,complete
+TAPB,bindingdb,audit_framework\cache\diagnostic_results\general_target_joint_shards\tapb\bindingdb,40,12,480,1360,complete
+TAPB,biosnap,audit_framework\cache\diagnostic_results\general_target_joint_shards\tapb\biosnap,40,12,480,1360,complete
+TAPB,human,audit_framework\cache\diagnostic_results\general_target_joint_shards\tapb\human,40,12,480,1360,complete

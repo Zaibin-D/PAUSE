@@ -1,0 +1,7 @@
+group_axis,measure,num_independent_runs,num_model_dataset_strata,mean,run_win_rate,ci_low,ci_high
+drug,delta_error_detection_auprc_vs_uncertainty,43,9,0.147897711997,0.674418604651,0.06768903631,0.232070111717
+drug,delta_review_error_rate_vs_uncertainty,40,9,0.107950074139,0.7,0.044057559188,0.174810515063
+drug,delta_retained_accuracy_gain_vs_residual_vs_uncertainty,40,9,0.026998030223,0.7,0.011138411654,0.043590722654
+target,delta_error_detection_auprc_vs_uncertainty,43,9,0.042119154572,0.581395348837,0.009886717531,0.076013860293
+target,delta_review_error_rate_vs_uncertainty,40,9,0.0312810846,0.575,0.00325738577,0.062788088221
+target,delta_retained_accuracy_gain_vs_residual_vs_uncertainty,40,9,0.007838747388,0.575,0.000903893379,0.015723268083

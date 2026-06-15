@@ -1,0 +1,11 @@
+model,dataset,test_run,group_axis,confidence_source,delta_error_detection_auprc_vs_uncertainty,delta_review_error_rate_vs_uncertainty,delta_retained_accuracy_gain_vs_residual_vs_uncertainty
+PACE,human,seed_4,drug,base,-0.006325058157,-0.016666666667,-0.004098360656
+PACE,human,seed_4,target,base,-0.051268909671,-0.048039215686,-0.012085176072
+PACE,human,seed_5,drug,base,-0.039687304286,-0.016666666667,-0.004032258065
+PACE,human,seed_5,target,base,-0.001166912458,0.016666666667,0.004032258065
+PACE,human,seed_6,drug,base,-0.005355852669,0.0,0.0
+PACE,human,seed_6,target,base,0.0,0.0,0.0
+PACE,human,seed_7,drug,base,0.0,0.0,0.0
+PACE,human,seed_7,target,base,-0.101397127906,-0.083333333333,-0.020161290323
+PACE,human,seed_8,drug,base,0.0,0.0,0.0
+PACE,human,seed_8,target,base,-0.009416288298,0.0,0.0

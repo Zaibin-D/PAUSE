@@ -1,0 +1,11 @@
+model,dataset,test_run,group_axis,confidence_source,delta_error_detection_auprc_vs_uncertainty,delta_review_error_rate_vs_uncertainty,delta_retained_accuracy_gain_vs_residual_vs_uncertainty
+TAPB,bindingdb,seed_4,drug,base,,,
+TAPB,bindingdb,seed_4,target,base,,,
+TAPB,bindingdb,seed_5,drug,base,0.125531215268,0.221530234471,0.055093627672
+TAPB,bindingdb,seed_5,target,base,0.060931058805,0.09,0.0225
+TAPB,bindingdb,seed_6,drug,base,,,
+TAPB,bindingdb,seed_6,target,base,,,
+TAPB,bindingdb,seed_7,drug,base,0.245234981383,0.258520550331,0.063930818504
+TAPB,bindingdb,seed_7,target,base,0.126847449806,0.117437304075,0.029056986374
+TAPB,bindingdb,seed_8,drug,base,0.151099333774,0.205030487805,0.051352810983
+TAPB,bindingdb,seed_8,target,base,0.118319187489,0.159044715447,0.039728658577

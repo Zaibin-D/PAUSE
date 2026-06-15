@@ -1,0 +1,7 @@
+group_axis,variant,measure,mean,ci_low,ci_high,independent_runs,positive_fraction
+drug,permute_prior,actual_minus_control_auprc,0.019712878224,-0.026827078345,0.151338566933,32,0.625
+drug,permute_prior_support,actual_minus_control_auprc,0.227926854719,0.182274342267,0.332554644775,32,1.0
+drug,permute_support,actual_minus_control_auprc,0.169440286188,0.118457199383,0.21590365159,32,1.0
+target,permute_prior,actual_minus_control_auprc,0.030130423643,-0.002524973344,0.113968377442,35,0.457142857143
+target,permute_prior_support,actual_minus_control_auprc,0.13817919516,0.059430280071,0.312005917169,35,0.8
+target,permute_support,actual_minus_control_auprc,0.065342203668,-0.005038836315,0.196434231273,35,0.571428571429

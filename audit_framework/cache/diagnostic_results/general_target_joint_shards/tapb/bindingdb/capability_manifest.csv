@@ -1,0 +1,11 @@
+model,dataset,test_run,split,uncertainty_available,prior_available,empirical_support_available,native_support_available,direct_target_support_available,joint_support_available,available_modes,maximum_mode
+TAPB,bindingdb,seed_4,validation,True,True,True,True,True,True,U|U+P|U+E|U+P+E,U+P+E
+TAPB,bindingdb,seed_4,test,True,True,True,True,True,True,U|U+P|U+E|U+P+E,U+P+E
+TAPB,bindingdb,seed_5,validation,True,True,True,True,True,True,U|U+P|U+E|U+P+E,U+P+E
+TAPB,bindingdb,seed_5,test,True,True,True,True,True,True,U|U+P|U+E|U+P+E,U+P+E
+TAPB,bindingdb,seed_6,validation,True,True,True,True,True,True,U|U+P|U+E|U+P+E,U+P+E
+TAPB,bindingdb,seed_6,test,True,True,True,True,True,True,U|U+P|U+E|U+P+E,U+P+E
+TAPB,bindingdb,seed_7,validation,True,True,True,True,True,True,U|U+P|U+E|U+P+E,U+P+E
+TAPB,bindingdb,seed_7,test,True,True,True,True,True,True,U|U+P|U+E|U+P+E,U+P+E
+TAPB,bindingdb,seed_8,validation,True,True,True,True,True,True,U|U+P|U+E|U+P+E,U+P+E
+TAPB,bindingdb,seed_8,test,True,True,True,True,True,True,U|U+P|U+E|U+P+E,U+P+E

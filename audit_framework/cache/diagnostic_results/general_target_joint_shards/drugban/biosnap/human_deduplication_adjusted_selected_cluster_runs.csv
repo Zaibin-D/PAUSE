@@ -1,0 +1,11 @@
+model,dataset,test_run,group_axis,confidence_source,delta_error_detection_auprc_vs_uncertainty,delta_review_error_rate_vs_uncertainty,delta_retained_accuracy_gain_vs_residual_vs_uncertainty
+DrugBAN,biosnap,seed_4,drug,base,0.282186034822,0.149179197995,0.037140412184
+DrugBAN,biosnap,seed_4,target,base,0.071118020794,0.02380952381,0.005830753354
+DrugBAN,biosnap,seed_5,drug,base,0.344920535137,0.268274254481,0.066632729538
+DrugBAN,biosnap,seed_5,target,base,0.060080300763,-0.001802507837,-0.00048814112
+DrugBAN,biosnap,seed_6,drug,base,0.219547095426,0.247247328473,0.061771004446
+DrugBAN,biosnap,seed_6,target,base,0.058139086661,0.029135338346,0.007272942289
+DrugBAN,biosnap,seed_7,drug,base,0.357404162594,0.367750783699,0.091362694503
+DrugBAN,biosnap,seed_7,target,base,0.130659614003,0.145376175549,0.036104665723
+DrugBAN,biosnap,seed_8,drug,base,0.298503429039,0.257546082949,0.064869238091
+DrugBAN,biosnap,seed_8,target,base,0.010479417213,0.030414746544,0.007662162953

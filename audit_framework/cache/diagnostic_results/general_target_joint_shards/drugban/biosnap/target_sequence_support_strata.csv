@@ -1,0 +1,15 @@
+split,group_axis,model,dataset,measure,num_independent_runs,mean,run_win_rate,min,max
+test,drug,DrugBAN,biosnap,delta_error_detection_auprc,5,-0.014534756911,0.2,-0.057160248696,0.010655417052
+test,drug,DrugBAN,biosnap,delta_review_lift,5,0.098239776676,0.8,-0.048763736264,0.213782431865
+test,drug,DrugBAN,biosnap,delta_retained_accuracy_gain_vs_residual,5,0.004378027463,0.8,-0.002192982456,0.009603242264
+test,target,DrugBAN,biosnap,delta_error_detection_auprc,5,-0.022637517589,0.2,-0.065915873941,0.001671914125
+test,target,DrugBAN,biosnap,delta_review_lift,5,0.02472778832,0.4,-0.080908317278,0.170196155712
+test,target,DrugBAN,biosnap,delta_retained_accuracy_gain_vs_residual,5,0.000530950584,0.4,-0.004767502612,0.007608010091
+validation,drug,DrugBAN,biosnap,delta_validation_fold_mean_auprc,5,-0.009707810244,0.4,-0.02308942164,0.009396375716
+validation,drug,DrugBAN,biosnap,delta_error_detection_auprc,5,-0.007311671835,0.4,-0.030412550985,0.011072206708
+validation,drug,DrugBAN,biosnap,delta_review_lift,5,-0.029443320764,0.2,-0.065231607142,0.0241335425
+validation,drug,DrugBAN,biosnap,delta_retained_accuracy_gain_vs_residual,5,-0.001117274026,0.2,-0.002416439574,0.000904655876
+validation,target,DrugBAN,biosnap,delta_validation_fold_mean_auprc,5,0.015287964881,0.8,-0.003656097436,0.034856263302
+validation,target,DrugBAN,biosnap,delta_error_detection_auprc,5,0.010721810466,0.6,-0.012305512187,0.036458488607
+validation,target,DrugBAN,biosnap,delta_review_lift,5,0.093005715272,1.0,0.039239289391,0.192235783566
+validation,target,DrugBAN,biosnap,delta_retained_accuracy_gain_vs_residual,5,0.004929842019,1.0,0.001475589646,0.012625507269

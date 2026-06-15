@@ -1,0 +1,32 @@
+{
+  "analysis": "fixed_hgb_upe_heterogeneity",
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 2026,
+  "candidate_path": "audit_framework\\cache\\diagnostic_results\\strengthening_experiments\\merged\\candidate_budget_runs.csv",
+  "candidate_sha256": "5f203a52e1030a712356946fb1d42eb6272250ccb14acc27ce6c02461633508a",
+  "cluster_rows": 90,
+  "datasets": [
+    "bindingdb",
+    "biosnap",
+    "human"
+  ],
+  "group_axes": [
+    "drug",
+    "target"
+  ],
+  "models": [
+    "DrugBAN",
+    "PACE",
+    "TAPB"
+  ],
+  "policy_rows": 360,
+  "selected_path": "audit_framework\\cache\\diagnostic_results\\strengthening_experiments\\merged\\selected_budget_runs.csv",
+  "selected_sha256": "5ad58f1f7a9244360a500998b56ae6e51f191e178e1e7a96b9842fbb7c9aeafc",
+  "test_runs": [
+    "seed_4",
+    "seed_5",
+    "seed_6",
+    "seed_7",
+    "seed_8"
+  ]
+}

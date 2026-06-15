@@ -1,0 +1,15 @@
+split,group_axis,model,dataset,measure,num_independent_runs,mean,run_win_rate,min,max
+test,drug,TAPB,bindingdb,delta_error_detection_auprc,3,-0.001831873297,0.333333333333,-0.017993367895,0.021252914143
+test,drug,TAPB,bindingdb,delta_review_lift,3,-0.10475317124,0.333333333333,-0.198191854442,0.016760099774
+test,drug,TAPB,bindingdb,delta_retained_accuracy_gain_vs_residual,3,-0.007240748782,0.333333333333,-0.016364730775,0.001721956447
+test,target,TAPB,bindingdb,delta_error_detection_auprc,3,0.003803283821,0.333333333333,-0.031215587922,0.047915065767
+test,target,TAPB,bindingdb,delta_review_lift,3,-0.045488394905,0.333333333333,-0.181190854291,0.08334441093
+test,target,TAPB,bindingdb,delta_retained_accuracy_gain_vs_residual,3,-0.001606423597,0.333333333333,-0.008657754847,0.007273454882
+validation,drug,TAPB,bindingdb,delta_validation_fold_mean_auprc,3,-0.006688476846,0.333333333333,-0.022037139833,0.014388799759
+validation,drug,TAPB,bindingdb,delta_error_detection_auprc,3,-0.010071695263,0.333333333333,-0.023153297316,0.013750687673
+validation,drug,TAPB,bindingdb,delta_review_lift,3,-0.004592541843,0.333333333333,-0.017661841836,0.004811533024
+validation,drug,TAPB,bindingdb,delta_retained_accuracy_gain_vs_residual,3,-0.000262800581,0.666666666667,-0.001426424143,0.000442572749
+validation,target,TAPB,bindingdb,delta_validation_fold_mean_auprc,3,-0.010575731494,0.333333333333,-0.035437731312,0.016336463246
+validation,target,TAPB,bindingdb,delta_error_detection_auprc,3,-0.009705584137,0.333333333333,-0.017011197642,0.004860891737
+validation,target,TAPB,bindingdb,delta_review_lift,3,-0.090349273176,0.0,-0.22671776941,-0.007195728506
+validation,target,TAPB,bindingdb,delta_retained_accuracy_gain_vs_residual,3,-0.005655859736,0.0,-0.013611438632,-0.00058932212

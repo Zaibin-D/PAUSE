@@ -1,0 +1,12 @@
+{
+  "candidate_rows": 480,
+  "dataset": "human",
+  "increment_rows": 1360,
+  "model": "TAPB",
+  "out_dir": "audit_framework\\cache\\diagnostic_results\\general_target_joint_shards\\tapb\\human",
+  "policies": 40,
+  "profiles": 12,
+  "schema_version": 1,
+  "shard_bootstrap_resamples": 20,
+  "status": "complete"
+}
