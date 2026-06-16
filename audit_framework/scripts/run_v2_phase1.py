@@ -69,10 +69,20 @@ E2_FEATURES = (
     "e2_drug_marginal_support",
     "e2_target_marginal_support",
     "e2_joint_nn_sim",
-    "e2_joint_top5_mean_sim",
-    "e2_joint_top10_density",
+    "e2_joint_top5_available_mean_sim",
+    "e2_joint_top5_padded_mean_sim",
+    "e2_joint_top10_pair_occurrence_rate",
+    "e2_joint_top10_sim_sum",
     "e2_joint_support_gap",
     "e2_drug_target_support_imbalance",
+)
+
+COMPARISON_METRICS = (
+    "error_detection_auprc",
+    "error_detection_auroc",
+    "review_lift",
+    "review_recall_of_residual_errors",
+    "retained_accuracy_gain_vs_residual",
 )
 
 FORMAL_PROFILE_MAP = {
@@ -204,15 +214,20 @@ def _joint_from_payload(table: pd.DataFrame, payload: dict[str, object]) -> pd.D
         combos.sort(key=lambda item: item[0], reverse=True)
         supported = [score for score, exists in combos if exists]
         top10 = combos[:10]
+        top10_supported = [score for score, exists in top10 if exists]
         rows.append(
             {
                 "e2_joint_nn_sim": max(supported, default=0.0),
-                "e2_joint_top5_mean_sim": float(np.mean((supported + [0.0] * 5)[:5])),
-                "e2_joint_top10_density": (
+                "e2_joint_top5_available_mean_sim": (
+                    float(np.mean(supported[:5])) if supported else 0.0
+                ),
+                "e2_joint_top5_padded_mean_sim": float(np.mean((supported[:5] + [0.0] * 5)[:5])),
+                "e2_joint_top10_pair_occurrence_rate": (
                     float(sum(1 for _, exists in top10 if exists) / len(top10))
                     if top10
                     else 0.0
                 ),
+                "e2_joint_top10_sim_sum": float(sum(top10_supported)),
             }
         )
     return pd.DataFrame(rows, index=table.index)
@@ -237,24 +252,24 @@ def _e2_features(
     if real_joint_available:
         joint = _joint_from_payload(table, payload)
         joint_mode = "real_source_pair_joint_support"
-        top5_fallback = False
-        top10_fallback = False
     else:
         joint = pd.DataFrame(index=table.index)
         joint["e2_joint_nn_sim"] = fallback_joint
-        joint["e2_joint_top5_mean_sim"] = fallback_joint
-        joint["e2_joint_top10_density"] = fallback_joint
+        joint["e2_joint_top5_available_mean_sim"] = fallback_joint
+        joint["e2_joint_top5_padded_mean_sim"] = fallback_joint
+        joint["e2_joint_top10_pair_occurrence_rate"] = fallback_joint
+        joint["e2_joint_top10_sim_sum"] = fallback_joint
         joint_mode = "harmonic_mean_marginal_fallback"
-        top5_fallback = True
-        top10_fallback = True
 
     marginal_hmean = fallback_joint
     features = pd.DataFrame(index=table.index)
     features["e2_drug_marginal_support"] = drug_support
     features["e2_target_marginal_support"] = target_support
     features["e2_joint_nn_sim"] = joint["e2_joint_nn_sim"].clip(0.0, 1.0)
-    features["e2_joint_top5_mean_sim"] = joint["e2_joint_top5_mean_sim"].clip(0.0, 1.0)
-    features["e2_joint_top10_density"] = joint["e2_joint_top10_density"].clip(0.0, 1.0)
+    features["e2_joint_top5_available_mean_sim"] = joint["e2_joint_top5_available_mean_sim"].clip(0.0, 1.0)
+    features["e2_joint_top5_padded_mean_sim"] = joint["e2_joint_top5_padded_mean_sim"].clip(0.0, 1.0)
+    features["e2_joint_top10_pair_occurrence_rate"] = joint["e2_joint_top10_pair_occurrence_rate"].clip(0.0, 1.0)
+    features["e2_joint_top10_sim_sum"] = joint["e2_joint_top10_sim_sum"]
     features["e2_joint_support_gap"] = (marginal_hmean - features["e2_joint_nn_sim"]).clip(-1.0, 1.0)
     features["e2_drug_target_support_imbalance"] = (drug_support - target_support).abs().clip(0.0, 1.0)
 
@@ -269,9 +284,13 @@ def _e2_features(
     mode = {
         "e2_real_joint_support_available": bool(real_joint_available),
         "e2_fallback_used": not bool(real_joint_available),
-        "e2_top5_fallback_used": top5_fallback,
-        "e2_top10_fallback_used": top10_fallback,
+        "e2_top5_fallback_used": not bool(real_joint_available),
+        "e2_top10_fallback_used": not bool(real_joint_available),
         "e2_joint_support_mode": joint_mode,
+        "drug_similarity_mode": "rank_normalized_existing_columns",
+        "target_similarity_mode": "rank_normalized_existing_columns",
+        "support_normalization_mode": "per_split_rank_normalization",
+        "support_normalization_warning": True,
         "e2_drug_support_columns": "|".join(drug_columns),
         "e2_target_support_columns": "|".join(target_columns),
         "e2_missing_columns_or_assets": "|".join(missing),
@@ -565,6 +584,10 @@ def _feature_availability_row(
         "e2_top5_fallback_used": e2_mode.get("e2_top5_fallback_used", True),
         "e2_top10_fallback_used": e2_mode.get("e2_top10_fallback_used", True),
         "e2_joint_support_mode": e2_mode.get("e2_joint_support_mode", "unavailable"),
+        "drug_similarity_mode": e2_mode.get("drug_similarity_mode", "unavailable"),
+        "target_similarity_mode": e2_mode.get("target_similarity_mode", "unavailable"),
+        "support_normalization_mode": e2_mode.get("support_normalization_mode", "unavailable"),
+        "support_normalization_warning": bool(e2_mode.get("support_normalization_warning", False)),
         "e2_drug_support_columns": e2_mode.get("e2_drug_support_columns", ""),
         "e2_target_support_columns": e2_mode.get("e2_target_support_columns", ""),
         "missing_columns_or_warnings": "|".join(
@@ -650,10 +673,16 @@ def _manifest() -> pd.DataFrame:
                 "notes": "Phase 1 U2 features only.",
             },
             {
+                "profile": "U+E2",
+                "profile_type": "v2_candidate",
+                "features": "|".join(("u2_calibrated_error_risk",) + E2_FEATURES),
+                "notes": "Formal uncertainty score plus E2-clean pair-level support proxy.",
+            },
+            {
                 "profile": "U2+E2",
                 "profile_type": "v2_candidate",
                 "features": "|".join(U2_FEATURES + E2_FEATURES),
-                "notes": "Phase 1 U2 plus E2-clean pair-level support proxy. No P2 or E2-label.",
+                "notes": "Phase 1.5 U2 plus E2-clean pair-level support proxy. No P2 or E2-label.",
             },
         ]
     )
@@ -701,19 +730,33 @@ def _metric_delta_summary(
     right: pd.DataFrame,
     *,
     comparison: str,
+    metrics: tuple[str, ...] = COMPARISON_METRICS,
+    group_keys: tuple[str, ...] = (),
     status_if_empty: str = "unavailable",
 ) -> pd.DataFrame:
+    base = {
+        "scope": "overall" if not group_keys else "_".join(group_keys),
+        "comparison": comparison,
+        "comparison_name": comparison,
+    }
     if left.empty or right.empty:
         return pd.DataFrame(
             [
                 {
-                    "comparison": comparison,
+                    **base,
                     "status": status_if_empty,
                     "metric": "",
                     "n_runs": 0,
+                    "matched_n_runs": 0,
+                    "selected_n_runs": int(len(left)),
+                    "unmatched_n_runs": int(len(left)),
+                    "win_rate": np.nan,
                     "left_mean": np.nan,
                     "right_mean": np.nan,
                     "delta_mean": np.nan,
+                    "mean_delta": np.nan,
+                    "ci_low": np.nan,
+                    "ci_high": np.nan,
                 }
             ]
         )
@@ -723,45 +766,109 @@ def _metric_delta_summary(
         return pd.DataFrame(
             [
                 {
-                    "comparison": comparison,
+                    **base,
                     "status": "no_matching_policy_keys",
                     "metric": "",
                     "n_runs": 0,
+                    "matched_n_runs": 0,
+                    "selected_n_runs": int(len(left)),
+                    "unmatched_n_runs": int(len(left)),
+                    "win_rate": np.nan,
                     "left_mean": np.nan,
                     "right_mean": np.nan,
                     "delta_mean": np.nan,
+                    "mean_delta": np.nan,
+                    "ci_low": np.nan,
+                    "ci_high": np.nan,
                 }
             ]
         )
     rows = []
-    for metric in METRICS:
-        lcol = f"{metric}_left"
-        rcol = f"{metric}_right"
-        if lcol not in merged or rcol not in merged:
-            continue
-        left_values = pd.to_numeric(merged[lcol], errors="coerce")
-        right_values = pd.to_numeric(merged[rcol], errors="coerce")
-        delta = left_values - right_values
-        rows.append(
-            {
-                "comparison": comparison,
-                "status": "ok",
-                "metric": metric,
-                "n_runs": int(delta.notna().sum()),
-                "left_mean": float(left_values.mean()) if left_values.notna().any() else np.nan,
-                "right_mean": float(right_values.mean()) if right_values.notna().any() else np.nan,
-                "delta_mean": float(delta.mean()) if delta.notna().any() else np.nan,
-            }
-        )
+    grouped = [((), merged)] if not group_keys else merged.groupby(list(group_keys), dropna=False)
+    for key_values, part in grouped:
+        if group_keys and not isinstance(key_values, tuple):
+            key_values = (key_values,)
+        group_values = {
+            key: value for key, value in zip(group_keys, key_values if group_keys else ())
+        }
+        left_keys = left
+        for key, value in group_values.items():
+            if key in left_keys:
+                left_keys = left_keys.loc[left_keys[key].eq(value)]
+        selected_n = int(len(left_keys))
+        for metric in metrics:
+            lcol = f"{metric}_left"
+            rcol = f"{metric}_right"
+            if lcol not in part or rcol not in part:
+                continue
+            left_values = pd.to_numeric(part[lcol], errors="coerce")
+            right_values = pd.to_numeric(part[rcol], errors="coerce")
+            delta = (left_values - right_values).dropna()
+            matched_n = int(delta.size)
+            rows.append(
+                {
+                    **base,
+                    **group_values,
+                    "status": "ok" if matched_n else "no_finite_metric_pairs",
+                    "metric": metric,
+                    "n_runs": matched_n,
+                    "matched_n_runs": matched_n,
+                    "selected_n_runs": selected_n,
+                    "unmatched_n_runs": max(selected_n - matched_n, 0),
+                    "win_rate": float((delta > 0).mean()) if matched_n else np.nan,
+                    "left_mean": float(left_values.mean()) if left_values.notna().any() else np.nan,
+                    "right_mean": float(right_values.mean()) if right_values.notna().any() else np.nan,
+                    "delta_mean": float(delta.mean()) if matched_n else np.nan,
+                    "mean_delta": float(delta.mean()) if matched_n else np.nan,
+                    "ci_low": float(delta.quantile(0.025)) if matched_n else np.nan,
+                    "ci_high": float(delta.quantile(0.975)) if matched_n else np.nan,
+                }
+            )
     return pd.DataFrame(rows)
 
 
-def _component_increment_summary(test_candidates: pd.DataFrame) -> pd.DataFrame:
-    left = test_candidates.loc[test_candidates["profile"].astype(str).eq("U2+E2")]
-    right = test_candidates.loc[test_candidates["profile"].astype(str).eq("U2")]
-    summary = _metric_delta_summary(left, right, comparison="U2+E2 - U2")
-    summary.insert(0, "scope", "overall")
-    return summary
+def _all_scope_delta_summary(
+    left: pd.DataFrame,
+    right: pd.DataFrame,
+    *,
+    comparison: str,
+    metrics: tuple[str, ...] = COMPARISON_METRICS,
+) -> pd.DataFrame:
+    pieces = [
+        _metric_delta_summary(left, right, comparison=comparison, metrics=metrics),
+    ]
+    for scope, keys in (
+        ("grouping", ("group_axis",)),
+        ("dataset", ("dataset",)),
+        ("model", ("model",)),
+    ):
+        part = _metric_delta_summary(left, right, comparison=comparison, metrics=metrics, group_keys=keys)
+        if not part.empty:
+            part["scope"] = scope
+        pieces.append(part)
+    return pd.concat(pieces, ignore_index=True, sort=False)
+
+
+def _component_increment_summary(test_candidates: pd.DataFrame, formal_test: pd.DataFrame) -> pd.DataFrame:
+    comparisons = [
+        ("U2 - U", "U2", "U"),
+        ("U+E2 - U", "U+E2", "U"),
+        ("U2+E2 - U2", "U2+E2", "U2"),
+        ("U2+E2 - U", "U2+E2", "U"),
+    ]
+    pieces = []
+    for name, left_profile, right_profile in comparisons:
+        left = test_candidates.loc[test_candidates["profile"].astype(str).eq(left_profile)]
+        right = test_candidates.loc[test_candidates["profile"].astype(str).eq(right_profile)]
+        pieces.append(_all_scope_delta_summary(left, right, comparison=name))
+    formal_ue = (
+        formal_test.loc[formal_test["profile"].astype(str).eq("U+E")]
+        if "profile" in formal_test
+        else pd.DataFrame()
+    )
+    v2_ue = test_candidates.loc[test_candidates["profile"].astype(str).eq("U+E2")]
+    pieces.append(_all_scope_delta_summary(v2_ue, formal_ue, comparison="U+E2 - formal U+E"))
+    return pd.concat(pieces, ignore_index=True, sort=False)
 
 
 def _v2_vs_formal_summary(selected_test: pd.DataFrame, formal_test: pd.DataFrame) -> pd.DataFrame:
@@ -772,7 +879,7 @@ def _v2_vs_formal_summary(selected_test: pd.DataFrame, formal_test: pd.DataFrame
             comparison="v2_selected - formal_selected",
         )
     formal_selected = formal_test.loc[formal_test["profile"].astype(str).eq("formal_selected")]
-    return _metric_delta_summary(
+    return _all_scope_delta_summary(
         selected_test,
         formal_selected,
         comparison="v2_selected - formal_selected",
@@ -783,18 +890,18 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--models", nargs="+", default=["PACE", "TAPB", "DrugBAN"])
     parser.add_argument("--datasets", nargs="+", default=list(DEFAULT_DATASETS))
-    parser.add_argument("--seeds", nargs="+", default=["1", "2", "3", "4", "5"])
+    parser.add_argument("--seeds", nargs="+", default=["4", "5", "6", "7", "8"])
     parser.add_argument("--group-axes", nargs="+", default=["target", "drug"])
     parser.add_argument("--test-roots", nargs="+", default=list(DEFAULT_TEST_ROOTS))
     parser.add_argument("--calibration-root", default="audit_framework/cache/validation_audits")
     parser.add_argument("--dataset-root", default="datasets")
     parser.add_argument(
         "--out-dir",
-        default="audit_framework/cache/diagnostic_results/pause_v2_phase1_debug",
+        default="audit_framework/cache/diagnostic_results/pause_v2_phase1",
     )
     parser.add_argument("--confidence-source", default="base", choices=["base", "calibrated"])
-    parser.add_argument("--confidence-thresholds", nargs="+", type=float, default=[0.8])
-    parser.add_argument("--uncertainty-reject-fractions", nargs="+", type=float, default=[0.05, 0.1, 0.2, 0.3])
+    parser.add_argument("--confidence-thresholds", nargs="+", type=float, default=[0.8, 0.9])
+    parser.add_argument("--uncertainty-reject-fractions", nargs="+", type=float, default=[0.1, 0.2])
     parser.add_argument("--review-fraction", type=float, default=0.20)
     parser.add_argument("--cv-folds", type=int, default=5)
     parser.add_argument("--cv-seed", type=int, default=13)
@@ -958,20 +1065,20 @@ def run(args: argparse.Namespace) -> None:
                         min_universe_n=args.min_universe_n,
                         deferred_mask=validation_policy["deferred_mask"],
                     )
-                    validation_rows.append(
-                        _candidate_row(
-                            metadata,
-                            split="validation",
-                            profile="U",
-                            complexity=0,
-                            result=validation_u,
-                            metrics=validation_u_metrics,
-                            policy=validation_policy,
-                        )
-                    )
-
                     local_validation_rows: list[dict[str, object]] = []
                     local_test_rows: list[dict[str, object]] = []
+                    validation_u_row = _candidate_row(
+                        metadata,
+                        split="validation",
+                        profile="U",
+                        complexity=0,
+                        result=validation_u,
+                        metrics=validation_u_metrics,
+                        policy=validation_policy,
+                    )
+                    validation_rows.append(validation_u_row)
+                    local_validation_rows.append(validation_u_row)
+
                     validation_u2 = _u2_cross_fitted_result(
                         validation,
                         validation_policy["residual_mask"],
@@ -1007,6 +1114,42 @@ def run(args: argparse.Namespace) -> None:
                         )
                     )
                     local_validation_rows.append(validation_u2_row)
+
+                    validation_ue2 = _u2_cross_fitted_result(
+                        validation,
+                        validation_policy["residual_mask"],
+                        validation_features,
+                        requested_features=("u2_calibrated_error_risk",) + E2_FEATURES,
+                        profile_name="U+E2",
+                        folds=args.cv_folds,
+                        seed=args.cv_seed,
+                        group_axis=group_axis,
+                        strict_group=args.strict_group_cv,
+                        min_fit_n=args.min_fit_n,
+                        min_feature_n=args.min_feature_n,
+                        ranking_weight=args.ranking_weight,
+                        max_pairs=args.max_ranking_pairs,
+                    )
+                    validation_ue2_metrics = evaluate_ranking(
+                        validation,
+                        validation_policy["residual_mask"],
+                        validation_ue2.scores,
+                        review_fraction=args.review_fraction,
+                        min_universe_n=args.min_universe_n,
+                        deferred_mask=validation_policy["deferred_mask"],
+                    )
+                    validation_rows.append(
+                        validation_ue2_row := _candidate_row(
+                            metadata,
+                            split="validation",
+                            profile="U+E2",
+                            complexity=1,
+                            result=validation_ue2,
+                            metrics=validation_ue2_metrics,
+                            policy=validation_policy,
+                        )
+                    )
+                    local_validation_rows.append(validation_ue2_row)
 
                     validation_u2e2 = _u2_cross_fitted_result(
                         validation,
@@ -1064,17 +1207,17 @@ def run(args: argparse.Namespace) -> None:
                         min_universe_n=args.min_universe_n,
                         deferred_mask=test_policy["deferred_mask"],
                     )
-                    test_rows.append(
-                        _candidate_row(
-                            metadata,
-                            split="test",
-                            profile="U",
-                            complexity=0,
-                            result=test_u,
-                            metrics=test_u_metrics,
-                            policy=test_policy,
-                        )
+                    test_u_row = _candidate_row(
+                        metadata,
+                        split="test",
+                        profile="U",
+                        complexity=0,
+                        result=test_u,
+                        metrics=test_u_metrics,
+                        policy=test_policy,
                     )
+                    test_rows.append(test_u_row)
+                    local_test_rows.append(test_u_row)
 
                     test_u2 = _u2_test_result(
                         validation,
@@ -1111,6 +1254,41 @@ def run(args: argparse.Namespace) -> None:
                     test_rows.append(test_u2_row)
                     local_test_rows.append(test_u2_row)
 
+                    test_ue2 = _u2_test_result(
+                        validation,
+                        validation_policy["residual_mask"],
+                        validation_features,
+                        test,
+                        test_policy["residual_mask"],
+                        test_features,
+                        requested_features=("u2_calibrated_error_risk",) + E2_FEATURES,
+                        profile_name="U+E2",
+                        seed=args.cv_seed,
+                        min_fit_n=args.min_fit_n,
+                        min_feature_n=args.min_feature_n,
+                        ranking_weight=args.ranking_weight,
+                        max_pairs=args.max_ranking_pairs,
+                    )
+                    test_ue2_metrics = evaluate_ranking(
+                        test,
+                        test_policy["residual_mask"],
+                        test_ue2.scores,
+                        review_fraction=args.review_fraction,
+                        min_universe_n=args.min_universe_n,
+                        deferred_mask=test_policy["deferred_mask"],
+                    )
+                    test_ue2_row = _candidate_row(
+                        metadata,
+                        split="test",
+                        profile="U+E2",
+                        complexity=1,
+                        result=test_ue2,
+                        metrics=test_ue2_metrics,
+                        policy=test_policy,
+                    )
+                    test_rows.append(test_ue2_row)
+                    local_test_rows.append(test_ue2_row)
+
                     test_u2e2 = _u2_test_result(
                         validation,
                         validation_policy["residual_mask"],
@@ -1146,28 +1324,53 @@ def run(args: argparse.Namespace) -> None:
                     test_rows.append(test_u2e2_row)
                     local_test_rows.append(test_u2e2_row)
 
-                    u2_metric = float(validation_u2_row.get("error_detection_auprc", np.nan))
-                    u2e2_metric = float(validation_u2e2_row.get("error_detection_auprc", np.nan))
-                    gain = u2e2_metric - u2_metric if np.isfinite(u2_metric) and np.isfinite(u2e2_metric) else np.nan
-                    selected_profile = (
-                        "U2+E2"
-                        if np.isfinite(gain) and gain >= float(args.min_validation_gain)
-                        else "U2"
+                    local_validation = pd.DataFrame(local_validation_rows)
+                    local_validation["selection_metric_value"] = pd.to_numeric(
+                        local_validation["error_detection_auprc"],
+                        errors="coerce",
                     )
+                    u_metric_values = local_validation.loc[
+                        local_validation["profile"].astype(str).eq("U"),
+                        "selection_metric_value",
+                    ]
+                    u_metric = float(u_metric_values.iloc[0]) if not u_metric_values.empty else np.nan
+                    finite = local_validation.loc[local_validation["selection_metric_value"].notna()].copy()
+                    finite["validation_gain_vs_U"] = finite["selection_metric_value"] - u_metric
+                    eligible = finite.loc[
+                        finite["profile"].astype(str).ne("U")
+                        & finite["validation_gain_vs_U"].ge(float(args.min_validation_gain))
+                    ]
+                    if eligible.empty:
+                        selected_profile = "U"
+                        selected_metric = u_metric
+                        selected_gain = 0.0 if np.isfinite(u_metric) else np.nan
+                        selection_reason = "fallback_to_U_gain_below_threshold_or_unavailable"
+                        fallback_reason = selection_reason
+                    else:
+                        selected = eligible.sort_values(
+                            ["selection_metric_value", "complexity", "profile"],
+                            ascending=[False, True, True],
+                            kind="mergesort",
+                        ).iloc[0]
+                        selected_profile = str(selected["profile"])
+                        selected_metric = float(selected["selection_metric_value"])
+                        selected_gain = float(selected["validation_gain_vs_U"])
+                        selection_reason = "validation_gain_vs_U_meets_threshold"
+                        fallback_reason = ""
                     selection_rows.append(
                         {
                             **metadata,
                             "selected_v2_profile": selected_profile,
                             "selection_metric": "validation_error_detection_auprc",
-                            "u2_validation_error_detection_auprc": u2_metric,
-                            "u2e2_validation_error_detection_auprc": u2e2_metric,
-                            "validation_gain_u2e2_minus_u2": gain,
+                            "validation_metric": selected_metric,
+                            "validation_gain_vs_U": selected_gain,
+                            "fallback_reason": fallback_reason,
+                            "u_validation_error_detection_auprc": u_metric,
+                            "u2_validation_error_detection_auprc": float(validation_u2_row.get("error_detection_auprc", np.nan)),
+                            "ue2_validation_error_detection_auprc": float(validation_ue2_row.get("error_detection_auprc", np.nan)),
+                            "u2e2_validation_error_detection_auprc": float(validation_u2e2_row.get("error_detection_auprc", np.nan)),
                             "min_validation_gain": float(args.min_validation_gain),
-                            "selection_reason": (
-                                "u2e2_gain_meets_threshold"
-                                if selected_profile == "U2+E2"
-                                else "u2e2_gain_below_threshold_or_unavailable"
-                            ),
+                            "selection_reason": selection_reason,
                         }
                     )
                     chosen = [
@@ -1176,6 +1379,14 @@ def run(args: argparse.Namespace) -> None:
                     selected_rows.append({**chosen, "selected_v2_profile": selected_profile})
 
     coverage = pd.DataFrame(coverage_rows)
+    if not coverage.empty and "residual_error_count" in coverage:
+        residual_errors = pd.to_numeric(coverage["residual_error_count"], errors="coerce")
+        coverage["residual_error_warning"] = residual_errors.lt(10)
+        coverage["residual_error_warning_reason"] = np.where(
+            coverage["residual_error_warning"],
+            "residual_error_count_lt_10",
+            "",
+        )
     feature_availability = pd.DataFrame(feature_rows)
     validation_candidates = pd.DataFrame(validation_rows)
     test_candidates = pd.DataFrame(test_rows)
@@ -1233,7 +1444,14 @@ def run(args: argparse.Namespace) -> None:
         args.precision,
     )
     write_csv(
-        _component_increment_summary(test_candidates),
+        pd.concat(
+            [
+                _component_increment_summary(test_candidates, formal_test),
+                _v2_vs_formal_summary(selected_test, formal_test),
+            ],
+            ignore_index=True,
+            sort=False,
+        ),
         out_dir / "component_increment_summary_v2_phase1.csv",
         args.precision,
     )
