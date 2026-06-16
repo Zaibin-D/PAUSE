@@ -1,5 +1,0 @@
-model,dataset,test_run,group_axis,confidence_source,confidence_threshold,uncertainty_reject_fraction,review_fraction,selected_v2_profile,selection_metric,validation_metric,validation_gain_vs_U,fallback_reason,u_validation_error_detection_auprc,u2_validation_error_detection_auprc,ue2_validation_error_detection_auprc,u2e2_validation_error_detection_auprc,min_validation_gain,selection_reason
-PACE,biosnap,seed_4,drug,base,0.8,0.1,0.2,U2+E2,validation_error_detection_auprc,0.323109,0.071817,,0.251293,0.243824,0.310881,0.323109,0.005,validation_gain_vs_U_meets_threshold
-PACE,biosnap,seed_4,drug,base,0.8,0.2,0.2,U2+E2,validation_error_detection_auprc,0.354566,0.135816,,0.21875,0.23991,0.315899,0.354566,0.005,validation_gain_vs_U_meets_threshold
-PACE,biosnap,seed_4,drug,base,0.9,0.1,0.2,U2+E2,validation_error_detection_auprc,0.361069,0.144617,,0.216452,0.213965,0.313972,0.361069,0.005,validation_gain_vs_U_meets_threshold
-PACE,biosnap,seed_4,drug,base,0.9,0.2,0.2,U+E2,validation_error_detection_auprc,0.373405,0.130958,,0.242448,0.215606,0.373405,0.368456,0.005,validation_gain_vs_U_meets_threshold

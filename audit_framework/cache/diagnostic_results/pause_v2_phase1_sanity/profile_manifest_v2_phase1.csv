@@ -1,8 +1,0 @@
-profile,profile_type,features,notes
-U,formal_baseline,calibrated_error_risk,Uncertainty baseline under the same candidate/defer/residual policy.
-U+E,formal_baseline,formal uncertainty_support,Read-only formal PAUSE comparator if present.
-U+P+E,formal_baseline,formal uncertainty_prior_support,Read-only formal PAUSE comparator if present.
-formal_selected,formal_baseline,validation-selected formal PAUSE profile,Read-only formal selected comparator if present.
-U2,v2_candidate,u2_calibrated_error_risk|u2_confidence_percentile|u2_risk_percentile|u2_defer_boundary_margin|u2_defer_boundary_proximity,Phase 1 U2 features only.
-U+E2,v2_candidate,u2_calibrated_error_risk|e2_drug_marginal_support|e2_target_marginal_support|e2_joint_nn_sim|e2_joint_top5_available_mean_sim|e2_joint_top5_padded_mean_sim|e2_joint_top10_pair_occurrence_rate|e2_joint_top10_sim_sum|e2_joint_support_gap|e2_drug_target_support_imbalance,Formal uncertainty score plus E2-clean pair-level support proxy.
-U2+E2,v2_candidate,u2_calibrated_error_risk|u2_confidence_percentile|u2_risk_percentile|u2_defer_boundary_margin|u2_defer_boundary_proximity|e2_drug_marginal_support|e2_target_marginal_support|e2_joint_nn_sim|e2_joint_top5_available_mean_sim|e2_joint_top5_padded_mean_sim|e2_joint_top10_pair_occurrence_rate|e2_joint_top10_sim_sum|e2_joint_support_gap|e2_drug_target_support_imbalance,Phase 1.5 U2 plus E2-clean pair-level support proxy. No P2 or E2-label.
