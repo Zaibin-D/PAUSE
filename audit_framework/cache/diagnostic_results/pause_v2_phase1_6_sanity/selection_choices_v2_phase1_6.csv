@@ -1,0 +1,9 @@
+model,dataset,test_run,group_axis,confidence_source,confidence_threshold,uncertainty_reject_fraction,review_fraction,selector_name,selected_v2_profile,validation_metric,validation_gain_vs_U,validation_gain_U_E_E2_vs_U_E,selection_reason,fallback_reason,validation_gain_U_P_E_E2_vs_best_formal,formal_selected_validation_metric,u_p_e_validation_metric,u_p_e_e2_validation_metric
+PACE,biosnap,seed_4,drug,base,0.8,0.1,0.2,selector_A_E_only_add_on,U+E+E2,0.480816,0.229524,0.042756,validation_gain_vs_U_meets_threshold,,,,,
+PACE,biosnap,seed_4,drug,base,0.8,0.1,0.2,selector_B_formal_plus_E2,U+P+E+E2,0.477022,,,u_p_e_e2_gain_vs_formal_baseline_meets_threshold,,0.030448,0.43806,0.446574,0.477022
+PACE,biosnap,seed_4,drug,base,0.8,0.2,0.2,selector_A_E_only_add_on,U+E+E2,0.430123,0.211374,0.006991,validation_gain_vs_U_meets_threshold,,,,,
+PACE,biosnap,seed_4,drug,base,0.8,0.2,0.2,selector_B_formal_plus_E2,formal_selected,0.423132,,,fallback_to_formal_selected_gain_below_threshold_or_unavailable,fallback_to_formal_selected_gain_below_threshold_or_unavailable,-0.001653,0.423132,0.394727,0.421479
+PACE,biosnap,seed_4,drug,base,0.9,0.1,0.2,selector_A_E_only_add_on,U+E+E2,0.441985,0.225533,0.005069,validation_gain_vs_U_meets_threshold,,,,,
+PACE,biosnap,seed_4,drug,base,0.9,0.1,0.2,selector_B_formal_plus_E2,formal_selected,0.436916,,,fallback_to_formal_selected_gain_below_threshold_or_unavailable,fallback_to_formal_selected_gain_below_threshold_or_unavailable,-0.005298,0.436916,0.439153,0.433855
+PACE,biosnap,seed_4,drug,base,0.9,0.2,0.2,selector_A_E_only_add_on,U+E+E2,0.501532,0.259084,0.041728,validation_gain_vs_U_meets_threshold,,,,,
+PACE,biosnap,seed_4,drug,base,0.9,0.2,0.2,selector_B_formal_plus_E2,U+P+E+E2,0.481351,,,u_p_e_e2_gain_vs_formal_baseline_meets_threshold,,0.021547,0.459804,0.424683,0.481351

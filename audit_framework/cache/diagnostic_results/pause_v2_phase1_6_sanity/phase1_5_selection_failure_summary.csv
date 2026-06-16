@@ -1,0 +1,14 @@
+scope,n_runs,mean_delta_error_detection_auprc_vs_formal_selected,win_rate,selected_v2_profile,group_axis,dataset,model
+overall,360,-0.059783,0.222222,,,,
+profile_v2,176,-0.033535,0.090909,U,,,
+profile_v2,86,-0.09263,0.406977,U+E2,,,
+profile_v2,24,-0.076336,0.125,U2,,,
+profile_v2,74,-0.064907,0.351351,U2+E2,,,
+group_axis,180,-0.101426,0.138889,,drug,,
+group_axis,180,-0.018141,0.305556,,target,,
+dataset,120,-0.083449,0.191667,,,bindingdb,
+dataset,120,-0.072475,0.35,,,biosnap,
+dataset,120,-0.025521,0.125,,,human,
+model,120,-0.059551,0.25,,,,DrugBAN
+model,120,-0.067881,0.216667,,,,PACE
+model,120,-0.051296,0.2,,,,TAPB
