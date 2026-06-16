@@ -1,0 +1,9 @@
+scope,comparison,status,metric,n_runs,left_mean,right_mean,delta_mean
+overall,U2+E2 - U2,ok,error_detection_auroc,4,0.783715,0.676272,0.107443
+overall,U2+E2 - U2,ok,error_detection_auprc,4,0.359749,0.265167,0.094583
+overall,U2+E2 - U2,ok,review_error_rate,4,0.287803,0.253775,0.034028
+overall,U2+E2 - U2,ok,review_lift,4,2.11729,1.783856,0.333434
+overall,U2+E2 - U2,ok,review_recall_of_residual_errors,4,0.422989,0.356345,0.066644
+overall,U2+E2 - U2,ok,combined_recall_of_candidate_errors,4,0.572222,0.544444,0.027778
+overall,U2+E2 - U2,ok,retained_accuracy_after_review,4,0.899268,0.890772,0.008496
+overall,U2+E2 - U2,ok,retained_accuracy_gain_vs_residual,4,0.037389,0.028894,0.008496

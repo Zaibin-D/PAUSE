@@ -1,0 +1,9 @@
+model,dataset,test_run,group_axis,confidence_source,confidence_threshold,uncertainty_reject_fraction,review_fraction,split,calibration_status,candidate_n,candidate_error_count,deferred_n,deferred_error_count,residual_n,residual_error_count,residual_has_two_classes
+PACE,biosnap,seed_4,drug,base,0.8,0.05,0.2,validation,cross_fitted,1039,190.0,52,21.0,987,169.0,True
+PACE,biosnap,seed_4,drug,base,0.8,0.05,0.2,test,fitted,278,45.0,14,1.0,264,44.0,True
+PACE,biosnap,seed_4,drug,base,0.8,0.1,0.2,validation,cross_fitted,1039,190.0,104,36.0,935,154.0,True
+PACE,biosnap,seed_4,drug,base,0.8,0.1,0.2,test,fitted,278,45.0,28,7.0,250,38.0,True
+PACE,biosnap,seed_4,drug,base,0.8,0.2,0.2,validation,cross_fitted,1039,190.0,208,65.0,831,125.0,True
+PACE,biosnap,seed_4,drug,base,0.8,0.2,0.2,test,fitted,278,45.0,56,17.0,222,28.0,True
+PACE,biosnap,seed_4,drug,base,0.8,0.3,0.2,validation,cross_fitted,1039,190.0,312,92.0,727,98.0,True
+PACE,biosnap,seed_4,drug,base,0.8,0.3,0.2,test,fitted,278,45.0,83,24.0,195,21.0,True

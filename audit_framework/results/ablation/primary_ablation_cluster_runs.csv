@@ -1,0 +1,1081 @@
+split,model,dataset,test_run,group_axis,confidence_source,profile_label,auprc,delta_auprc_vs_U
+test,DrugBAN,bindingdb,seed_4,drug,base,U,0.49747874999999997,0.0
+test,DrugBAN,bindingdb,seed_5,drug,base,U,0.2532945,0.0
+test,DrugBAN,bindingdb,seed_6,drug,base,U,0.14393899999999998,0.0
+test,DrugBAN,bindingdb,seed_7,drug,base,U,0.3322285,0.0
+test,DrugBAN,bindingdb,seed_8,drug,base,U,0.37083350000000004,0.0
+test,DrugBAN,biosnap,seed_4,drug,base,U,0.2922305,0.0
+test,DrugBAN,biosnap,seed_5,drug,base,U,0.34696699999999997,0.0
+test,DrugBAN,biosnap,seed_6,drug,base,U,0.2852955,0.0
+test,DrugBAN,biosnap,seed_7,drug,base,U,0.45382575,0.0
+test,DrugBAN,biosnap,seed_8,drug,base,U,0.29270875,0.0
+test,DrugBAN,human,seed_4,drug,base,U,0.2916665,0.0
+test,DrugBAN,human,seed_5,drug,base,U,0.3873455,0.0
+test,DrugBAN,human,seed_6,drug,base,U,0.5569445,0.0
+test,DrugBAN,human,seed_7,drug,base,U,0.1429825,0.0
+test,DrugBAN,human,seed_8,drug,base,U,0.289025,0.0
+test,PACE,bindingdb,seed_4,drug,base,U,0.2106585,0.0
+test,PACE,bindingdb,seed_5,drug,base,U,0.20268,0.0
+test,PACE,bindingdb,seed_6,drug,base,U,0.295321,0.0
+test,PACE,bindingdb,seed_7,drug,base,U,0.5695905,0.0
+test,PACE,bindingdb,seed_8,drug,base,U,0.2408315,0.0
+test,PACE,biosnap,seed_4,drug,base,U,0.25724175,0.0
+test,PACE,biosnap,seed_5,drug,base,U,0.15162475,0.0
+test,PACE,biosnap,seed_6,drug,base,U,0.19482824999999998,0.0
+test,PACE,biosnap,seed_7,drug,base,U,0.240373,0.0
+test,PACE,biosnap,seed_8,drug,base,U,0.22123125,0.0
+test,PACE,human,seed_4,drug,base,U,0.556306,0.0
+test,PACE,human,seed_5,drug,base,U,0.405647,0.0
+test,PACE,human,seed_6,drug,base,U,0.49957949999999995,0.0
+test,PACE,human,seed_7,drug,base,U,0.483781,0.0
+test,PACE,human,seed_8,drug,base,U,0.303599,0.0
+test,TAPB,bindingdb,seed_4,drug,base,U,,
+test,TAPB,bindingdb,seed_5,drug,base,U,0.4209985,0.0
+test,TAPB,bindingdb,seed_6,drug,base,U,,
+test,TAPB,bindingdb,seed_7,drug,base,U,0.3295245,0.0
+test,TAPB,bindingdb,seed_8,drug,base,U,0.3690955,0.0
+test,TAPB,biosnap,seed_4,drug,base,U,0.169738,0.0
+test,TAPB,biosnap,seed_5,drug,base,U,0.137234,0.0
+test,TAPB,biosnap,seed_6,drug,base,U,0.12305975000000001,0.0
+test,TAPB,biosnap,seed_7,drug,base,U,0.24264025,0.0
+test,TAPB,biosnap,seed_8,drug,base,U,0.219158,0.0
+test,TAPB,human,seed_4,drug,base,U,0.47337575,0.0
+test,TAPB,human,seed_5,drug,base,U,0.36976,0.0
+test,TAPB,human,seed_6,drug,base,U,0.217723,0.0
+test,TAPB,human,seed_7,drug,base,U,0.3573385,0.0
+test,TAPB,human,seed_8,drug,base,U,0.4036605,0.0
+test,DrugBAN,bindingdb,seed_4,drug,base,P,0.5256307499999999,0.028151999999999955
+test,DrugBAN,bindingdb,seed_5,drug,base,P,0.31721425,0.06391975
+test,DrugBAN,bindingdb,seed_6,drug,base,P,0.17392775,0.02998875000000001
+test,DrugBAN,bindingdb,seed_7,drug,base,P,0.398965,0.06673650000000003
+test,DrugBAN,bindingdb,seed_8,drug,base,P,0.185287,-0.18554650000000003
+test,DrugBAN,biosnap,seed_4,drug,base,P,0.321145,0.02891450000000001
+test,DrugBAN,biosnap,seed_5,drug,base,P,0.41689675000000004,0.06992975000000007
+test,DrugBAN,biosnap,seed_6,drug,base,P,0.35535875,0.07006325000000002
+test,DrugBAN,biosnap,seed_7,drug,base,P,0.57227225,0.11844650000000001
+test,DrugBAN,biosnap,seed_8,drug,base,P,0.32228725,0.029578500000000008
+test,DrugBAN,human,seed_4,drug,base,P,,
+test,DrugBAN,human,seed_5,drug,base,P,0.34121,-0.046135499999999996
+test,DrugBAN,human,seed_6,drug,base,P,,
+test,DrugBAN,human,seed_7,drug,base,P,0.12976200000000002,-0.013220499999999996
+test,DrugBAN,human,seed_8,drug,base,P,0.19374325,-0.09528174999999997
+test,PACE,bindingdb,seed_4,drug,base,P,0.282737,0.07207850000000002
+test,PACE,bindingdb,seed_5,drug,base,P,0.18249125,-0.020188750000000005
+test,PACE,bindingdb,seed_6,drug,base,P,0.329789,0.034468
+test,PACE,bindingdb,seed_7,drug,base,P,0.6418885,0.07229799999999997
+test,PACE,bindingdb,seed_8,drug,base,P,0.21573375,-0.025097750000000002
+test,PACE,biosnap,seed_4,drug,base,P,0.33742150000000004,0.08017975000000005
+test,PACE,biosnap,seed_5,drug,base,P,0.31183875,0.160214
+test,PACE,biosnap,seed_6,drug,base,P,0.2488695,0.05404125000000001
+test,PACE,biosnap,seed_7,drug,base,P,0.20257925,-0.037793750000000015
+test,PACE,biosnap,seed_8,drug,base,P,0.330008,0.10877675000000003
+test,PACE,human,seed_4,drug,base,P,0.5605315,0.004225499999999993
+test,PACE,human,seed_5,drug,base,P,0.36637875,-0.039268250000000005
+test,PACE,human,seed_6,drug,base,P,0.50056,0.0009805000000000508
+test,PACE,human,seed_7,drug,base,P,0.5441349999999999,0.06035399999999991
+test,PACE,human,seed_8,drug,base,P,0.20150625,-0.10209275000000001
+test,TAPB,bindingdb,seed_4,drug,base,P,,
+test,TAPB,bindingdb,seed_5,drug,base,P,0.34672325,-0.07427525000000001
+test,TAPB,bindingdb,seed_6,drug,base,P,,
+test,TAPB,bindingdb,seed_7,drug,base,P,0.44330825,0.11378375000000002
+test,TAPB,bindingdb,seed_8,drug,base,P,0.47266850000000005,0.10357300000000003
+test,TAPB,biosnap,seed_4,drug,base,P,0.22543275000000002,0.055694750000000015
+test,TAPB,biosnap,seed_5,drug,base,P,0.11553625000000001,-0.021697749999999988
+test,TAPB,biosnap,seed_6,drug,base,P,0.08221975,-0.040840000000000015
+test,TAPB,biosnap,seed_7,drug,base,P,0.297793,0.05515274999999997
+test,TAPB,biosnap,seed_8,drug,base,P,0.32517,0.10601200000000002
+test,TAPB,human,seed_4,drug,base,P,0.3312685,-0.14210724999999996
+test,TAPB,human,seed_5,drug,base,P,0.12585649999999998,-0.2439035
+test,TAPB,human,seed_6,drug,base,P,0.6135515,0.3958285
+test,TAPB,human,seed_7,drug,base,P,0.63339975,0.27606125000000004
+test,TAPB,human,seed_8,drug,base,P,0.491309,0.08764850000000002
+test,DrugBAN,bindingdb,seed_4,drug,base,U+P,0.5256959999999999,0.02821724999999997
+test,DrugBAN,bindingdb,seed_5,drug,base,U+P,0.31718274999999996,0.06388824999999998
+test,DrugBAN,bindingdb,seed_6,drug,base,U+P,0.1739115,0.029972500000000013
+test,DrugBAN,bindingdb,seed_7,drug,base,U+P,0.398358,0.06612950000000001
+test,DrugBAN,bindingdb,seed_8,drug,base,U+P,0.188759,-0.18207450000000003
+test,DrugBAN,biosnap,seed_4,drug,base,U+P,0.32090975,0.02867924999999999
+test,DrugBAN,biosnap,seed_5,drug,base,U+P,0.41722575,0.07025875000000004
+test,DrugBAN,biosnap,seed_6,drug,base,U+P,0.3554525,0.07015700000000002
+test,DrugBAN,biosnap,seed_7,drug,base,U+P,0.57227225,0.11844650000000001
+test,DrugBAN,biosnap,seed_8,drug,base,U+P,0.32233475,0.029625999999999986
+test,DrugBAN,human,seed_4,drug,base,U+P,,
+test,DrugBAN,human,seed_5,drug,base,U+P,0.34041299999999997,-0.046932500000000044
+test,DrugBAN,human,seed_6,drug,base,U+P,,
+test,DrugBAN,human,seed_7,drug,base,U+P,0.11875,-0.024232500000000018
+test,DrugBAN,human,seed_8,drug,base,U+P,0.186438,-0.10258699999999998
+test,PACE,bindingdb,seed_4,drug,base,U+P,0.28231875,0.07166025000000001
+test,PACE,bindingdb,seed_5,drug,base,U+P,0.18196125,-0.020718750000000008
+test,PACE,bindingdb,seed_6,drug,base,U+P,0.329789,0.034468
+test,PACE,bindingdb,seed_7,drug,base,U+P,0.6412964999999999,0.07170599999999994
+test,PACE,bindingdb,seed_8,drug,base,U+P,0.2057345,-0.03509700000000002
+test,PACE,biosnap,seed_4,drug,base,U+P,0.33700025,0.07975850000000001
+test,PACE,biosnap,seed_5,drug,base,U+P,0.31189775,0.16027299999999997
+test,PACE,biosnap,seed_6,drug,base,U+P,0.24871925,0.05389100000000002
+test,PACE,biosnap,seed_7,drug,base,U+P,0.20257925,-0.037793750000000015
+test,PACE,biosnap,seed_8,drug,base,U+P,0.33018575,0.10895450000000001
+test,PACE,human,seed_4,drug,base,U+P,0.57096775,0.014661750000000029
+test,PACE,human,seed_5,drug,base,U+P,0.36062525,-0.04502174999999997
+test,PACE,human,seed_6,drug,base,U+P,0.50056,0.0009805000000000508
+test,PACE,human,seed_7,drug,base,U+P,0.5455026666666667,0.061721666666666675
+test,PACE,human,seed_8,drug,base,U+P,0.2016305,-0.10196850000000002
+test,TAPB,bindingdb,seed_4,drug,base,U+P,,
+test,TAPB,bindingdb,seed_5,drug,base,U+P,0.34670775,-0.07429075000000002
+test,TAPB,bindingdb,seed_6,drug,base,U+P,,
+test,TAPB,bindingdb,seed_7,drug,base,U+P,0.440943,0.11141849999999998
+test,TAPB,bindingdb,seed_8,drug,base,U+P,0.4751485,0.10605299999999995
+test,TAPB,biosnap,seed_4,drug,base,U+P,0.22731675,0.05757875000000001
+test,TAPB,biosnap,seed_5,drug,base,U+P,0.11576725,-0.021466749999999993
+test,TAPB,biosnap,seed_6,drug,base,U+P,0.08227799999999999,-0.04078175000000002
+test,TAPB,biosnap,seed_7,drug,base,U+P,0.29895150000000004,0.056311250000000035
+test,TAPB,biosnap,seed_8,drug,base,U+P,0.325044,0.10588600000000001
+test,TAPB,human,seed_4,drug,base,U+P,0.33087625,-0.1424995
+test,TAPB,human,seed_5,drug,base,U+P,0.12667625,-0.24308375
+test,TAPB,human,seed_6,drug,base,U+P,0.647807,0.430084
+test,TAPB,human,seed_7,drug,base,U+P,0.62964825,0.27230975
+test,TAPB,human,seed_8,drug,base,U+P,0.48269775,0.07903725
+test,DrugBAN,bindingdb,seed_4,drug,base,U+E,0.58061925,0.08314050000000006
+test,DrugBAN,bindingdb,seed_5,drug,base,U+E,0.42100925,0.16771475000000002
+test,DrugBAN,bindingdb,seed_6,drug,base,U+E,0.49192175,0.34798275
+test,DrugBAN,bindingdb,seed_7,drug,base,U+E,0.7298702499999999,0.39764174999999996
+test,DrugBAN,bindingdb,seed_8,drug,base,U+E,1.0,0.6291665
+test,DrugBAN,biosnap,seed_4,drug,base,U+E,0.5744165,0.282186
+test,DrugBAN,biosnap,seed_5,drug,base,U+E,0.69188775,0.34492075000000005
+test,DrugBAN,biosnap,seed_6,drug,base,U+E,0.498841,0.2135455
+test,DrugBAN,biosnap,seed_7,drug,base,U+E,0.8112297500000001,0.35740400000000005
+test,DrugBAN,biosnap,seed_8,drug,base,U+E,0.59121175,0.298503
+test,DrugBAN,human,seed_4,drug,base,U+E,,
+test,DrugBAN,human,seed_5,drug,base,U+E,0.466361,0.07901550000000002
+test,DrugBAN,human,seed_6,drug,base,U+E,,
+test,DrugBAN,human,seed_7,drug,base,U+E,0.078112,-0.06487050000000001
+test,DrugBAN,human,seed_8,drug,base,U+E,0.489842,0.20081700000000002
+test,PACE,bindingdb,seed_4,drug,base,U+E,0.41676575,0.20610725
+test,PACE,bindingdb,seed_5,drug,base,U+E,0.71962625,0.51694625
+test,PACE,bindingdb,seed_6,drug,base,U+E,0.419452,0.12413099999999999
+test,PACE,bindingdb,seed_7,drug,base,U+E,0.46260999999999997,-0.10698050000000003
+test,PACE,bindingdb,seed_8,drug,base,U+E,0.55268025,0.31184875
+test,PACE,biosnap,seed_4,drug,base,U+E,0.54269875,0.285457
+test,PACE,biosnap,seed_5,drug,base,U+E,0.43083875,0.27921399999999996
+test,PACE,biosnap,seed_6,drug,base,U+E,0.36196025,0.167132
+test,PACE,biosnap,seed_7,drug,base,U+E,0.22940425,-0.01096875
+test,PACE,biosnap,seed_8,drug,base,U+E,0.45309125,0.23186
+test,PACE,human,seed_4,drug,base,U+E,0.363351,-0.192955
+test,PACE,human,seed_5,drug,base,U+E,0.29083775,-0.11480924999999997
+test,PACE,human,seed_6,drug,base,U+E,0.484579,-0.015000499999999972
+test,PACE,human,seed_7,drug,base,U+E,0.5443366666666667,0.060555666666666674
+test,PACE,human,seed_8,drug,base,U+E,0.34221250000000003,0.03861350000000002
+test,TAPB,bindingdb,seed_4,drug,base,U+E,,
+test,TAPB,bindingdb,seed_5,drug,base,U+E,0.5465297499999999,0.12553124999999993
+test,TAPB,bindingdb,seed_6,drug,base,U+E,,
+test,TAPB,bindingdb,seed_7,drug,base,U+E,0.5747595,0.24523499999999998
+test,TAPB,bindingdb,seed_8,drug,base,U+E,0.5201945,0.15109899999999998
+test,TAPB,biosnap,seed_4,drug,base,U+E,0.39293,0.223192
+test,TAPB,biosnap,seed_5,drug,base,U+E,0.34147425,0.20424024999999998
+test,TAPB,biosnap,seed_6,drug,base,U+E,0.28815225,0.16509249999999998
+test,TAPB,biosnap,seed_7,drug,base,U+E,0.37151425,0.128874
+test,TAPB,biosnap,seed_8,drug,base,U+E,0.516694,0.297536
+test,TAPB,human,seed_4,drug,base,U+E,0.4456255,-0.027750249999999976
+test,TAPB,human,seed_5,drug,base,U+E,0.42214625,0.05238625000000002
+test,TAPB,human,seed_6,drug,base,U+E,0.62473775,0.40701475
+test,TAPB,human,seed_7,drug,base,U+E,0.41007325,0.05273475
+test,TAPB,human,seed_8,drug,base,U+E,0.5531745,0.14951400000000004
+test,DrugBAN,bindingdb,seed_4,drug,base,U+P+E,0.61844975,0.12097100000000005
+test,DrugBAN,bindingdb,seed_5,drug,base,U+P+E,0.4648905,0.211596
+test,DrugBAN,bindingdb,seed_6,drug,base,U+P+E,0.486162,0.342223
+test,DrugBAN,bindingdb,seed_7,drug,base,U+P+E,0.69965325,0.36742475
+test,DrugBAN,bindingdb,seed_8,drug,base,U+P+E,0.9166665,0.545833
+test,DrugBAN,biosnap,seed_4,drug,base,U+P+E,0.535088,0.2428575
+test,DrugBAN,biosnap,seed_5,drug,base,U+P+E,0.65856425,0.31159725
+test,DrugBAN,biosnap,seed_6,drug,base,U+P+E,0.5120075,0.22671199999999997
+test,DrugBAN,biosnap,seed_7,drug,base,U+P+E,0.80418625,0.35036049999999996
+test,DrugBAN,biosnap,seed_8,drug,base,U+P+E,0.5637544999999999,0.2710457499999999
+test,DrugBAN,human,seed_4,drug,base,U+P+E,,
+test,DrugBAN,human,seed_5,drug,base,U+P+E,0.39294,0.005594500000000002
+test,DrugBAN,human,seed_6,drug,base,U+P+E,,
+test,DrugBAN,human,seed_7,drug,base,U+P+E,0.0756035,-0.06737900000000001
+test,DrugBAN,human,seed_8,drug,base,U+P+E,0.35246225000000003,0.06343725000000006
+test,PACE,bindingdb,seed_4,drug,base,U+P+E,0.423728,0.2130695
+test,PACE,bindingdb,seed_5,drug,base,U+P+E,0.73923125,0.53655125
+test,PACE,bindingdb,seed_6,drug,base,U+P+E,0.3682525,0.07293149999999998
+test,PACE,bindingdb,seed_7,drug,base,U+P+E,0.4866875,-0.082903
+test,PACE,bindingdb,seed_8,drug,base,U+P+E,0.61527175,0.37444025000000003
+test,PACE,biosnap,seed_4,drug,base,U+P+E,0.5667815,0.30953975000000006
+test,PACE,biosnap,seed_5,drug,base,U+P+E,0.364537,0.21291225
+test,PACE,biosnap,seed_6,drug,base,U+P+E,0.34437850000000003,0.14955025000000005
+test,PACE,biosnap,seed_7,drug,base,U+P+E,0.21012075000000002,-0.03025224999999998
+test,PACE,biosnap,seed_8,drug,base,U+P+E,0.41316274999999997,0.19193149999999998
+test,PACE,human,seed_4,drug,base,U+P+E,0.61300775,0.056701749999999995
+test,PACE,human,seed_5,drug,base,U+P+E,0.310977,-0.09466999999999998
+test,PACE,human,seed_6,drug,base,U+P+E,0.546259,0.046679500000000096
+test,PACE,human,seed_7,drug,base,U+P+E,0.47205199999999997,-0.011729000000000045
+test,PACE,human,seed_8,drug,base,U+P+E,0.19188650000000002,-0.11171249999999999
+test,TAPB,bindingdb,seed_4,drug,base,U+P+E,,
+test,TAPB,bindingdb,seed_5,drug,base,U+P+E,0.541663,0.12066450000000001
+test,TAPB,bindingdb,seed_6,drug,base,U+P+E,,
+test,TAPB,bindingdb,seed_7,drug,base,U+P+E,0.612114,0.28258950000000005
+test,TAPB,bindingdb,seed_8,drug,base,U+P+E,0.541404,0.17230849999999998
+test,TAPB,biosnap,seed_4,drug,base,U+P+E,0.3783655,0.20862750000000002
+test,TAPB,biosnap,seed_5,drug,base,U+P+E,0.249337,0.11210300000000001
+test,TAPB,biosnap,seed_6,drug,base,U+P+E,0.29306774999999996,0.17000799999999994
+test,TAPB,biosnap,seed_7,drug,base,U+P+E,0.4028965,0.16025625
+test,TAPB,biosnap,seed_8,drug,base,U+P+E,0.47601925,0.25686125000000004
+test,TAPB,human,seed_4,drug,base,U+P+E,0.45323225,-0.02014349999999998
+test,TAPB,human,seed_5,drug,base,U+P+E,0.32105,-0.048709999999999976
+test,TAPB,human,seed_6,drug,base,U+P+E,0.7208245,0.5031015
+test,TAPB,human,seed_7,drug,base,U+P+E,0.5313945,0.174056
+test,TAPB,human,seed_8,drug,base,U+P+E,0.55306825,0.14940775000000006
+test,DrugBAN,bindingdb,seed_4,drug,base,Validation-selected PAUSE,0.5671484999999999,0.06966974999999997
+test,DrugBAN,bindingdb,seed_5,drug,base,Validation-selected PAUSE,0.42133525,0.16804075000000002
+test,DrugBAN,bindingdb,seed_6,drug,base,Validation-selected PAUSE,0.49192175,0.34798275
+test,DrugBAN,bindingdb,seed_7,drug,base,Validation-selected PAUSE,0.724472,0.3922435
+test,DrugBAN,bindingdb,seed_8,drug,base,Validation-selected PAUSE,1.0,0.6291665
+test,DrugBAN,biosnap,seed_4,drug,base,Validation-selected PAUSE,0.5744165,0.282186
+test,DrugBAN,biosnap,seed_5,drug,base,Validation-selected PAUSE,0.69188775,0.34492075000000005
+test,DrugBAN,biosnap,seed_6,drug,base,Validation-selected PAUSE,0.50484275,0.21954725000000003
+test,DrugBAN,biosnap,seed_7,drug,base,Validation-selected PAUSE,0.8112297500000001,0.35740400000000005
+test,DrugBAN,biosnap,seed_8,drug,base,Validation-selected PAUSE,0.59121175,0.298503
+test,DrugBAN,human,seed_4,drug,base,Validation-selected PAUSE,0.2916665,0.0
+test,DrugBAN,human,seed_5,drug,base,Validation-selected PAUSE,0.3873455,0.0
+test,DrugBAN,human,seed_6,drug,base,Validation-selected PAUSE,0.5569445,0.0
+test,DrugBAN,human,seed_7,drug,base,Validation-selected PAUSE,0.1429825,0.0
+test,DrugBAN,human,seed_8,drug,base,Validation-selected PAUSE,0.25768975,-0.03133524999999998
+test,PACE,bindingdb,seed_4,drug,base,Validation-selected PAUSE,0.41676575,0.20610725
+test,PACE,bindingdb,seed_5,drug,base,Validation-selected PAUSE,0.71962625,0.51694625
+test,PACE,bindingdb,seed_6,drug,base,Validation-selected PAUSE,0.419452,0.12413099999999999
+test,PACE,bindingdb,seed_7,drug,base,Validation-selected PAUSE,0.46260999999999997,-0.10698050000000003
+test,PACE,bindingdb,seed_8,drug,base,Validation-selected PAUSE,0.55197025,0.31113875
+test,PACE,biosnap,seed_4,drug,base,Validation-selected PAUSE,0.54269875,0.285457
+test,PACE,biosnap,seed_5,drug,base,Validation-selected PAUSE,0.43083875,0.27921399999999996
+test,PACE,biosnap,seed_6,drug,base,Validation-selected PAUSE,0.36196025,0.167132
+test,PACE,biosnap,seed_7,drug,base,Validation-selected PAUSE,0.22940425,-0.01096875
+test,PACE,biosnap,seed_8,drug,base,Validation-selected PAUSE,0.45309125,0.23186
+test,PACE,human,seed_4,drug,base,Validation-selected PAUSE,0.54998075,-0.006325249999999949
+test,PACE,human,seed_5,drug,base,Validation-selected PAUSE,0.36595975000000003,-0.03968724999999995
+test,PACE,human,seed_6,drug,base,Validation-selected PAUSE,0.49422374999999996,-0.0053557499999999925
+test,PACE,human,seed_7,drug,base,Validation-selected PAUSE,0.483781,0.0
+test,PACE,human,seed_8,drug,base,Validation-selected PAUSE,0.303599,0.0
+test,TAPB,bindingdb,seed_4,drug,base,Validation-selected PAUSE,,
+test,TAPB,bindingdb,seed_5,drug,base,Validation-selected PAUSE,0.5465297499999999,0.12553124999999993
+test,TAPB,bindingdb,seed_6,drug,base,Validation-selected PAUSE,,
+test,TAPB,bindingdb,seed_7,drug,base,Validation-selected PAUSE,0.5747595,0.24523499999999998
+test,TAPB,bindingdb,seed_8,drug,base,Validation-selected PAUSE,0.5201945,0.15109899999999998
+test,TAPB,biosnap,seed_4,drug,base,Validation-selected PAUSE,0.39293,0.223192
+test,TAPB,biosnap,seed_5,drug,base,Validation-selected PAUSE,0.207824,0.07059000000000001
+test,TAPB,biosnap,seed_6,drug,base,Validation-selected PAUSE,0.17548724999999998,0.052427499999999974
+test,TAPB,biosnap,seed_7,drug,base,Validation-selected PAUSE,0.3317345,0.08909424999999999
+test,TAPB,biosnap,seed_8,drug,base,Validation-selected PAUSE,0.38023175,0.16107375
+test,TAPB,human,seed_4,drug,base,Validation-selected PAUSE,0.47337575,0.0
+test,TAPB,human,seed_5,drug,base,Validation-selected PAUSE,0.38571225,0.01595225
+test,TAPB,human,seed_6,drug,base,Validation-selected PAUSE,0.3243415,0.1066185
+test,TAPB,human,seed_7,drug,base,Validation-selected PAUSE,0.3930135,0.03567500000000001
+test,TAPB,human,seed_8,drug,base,Validation-selected PAUSE,0.4036605,0.0
+test,DrugBAN,bindingdb,seed_4,target,base,U,0.49747874999999997,0.0
+test,DrugBAN,bindingdb,seed_5,target,base,U,0.2532945,0.0
+test,DrugBAN,bindingdb,seed_6,target,base,U,0.14393899999999998,0.0
+test,DrugBAN,bindingdb,seed_7,target,base,U,0.3322285,0.0
+test,DrugBAN,bindingdb,seed_8,target,base,U,0.37083350000000004,0.0
+test,DrugBAN,biosnap,seed_4,target,base,U,0.2922305,0.0
+test,DrugBAN,biosnap,seed_5,target,base,U,0.34696699999999997,0.0
+test,DrugBAN,biosnap,seed_6,target,base,U,0.2852955,0.0
+test,DrugBAN,biosnap,seed_7,target,base,U,0.45382575,0.0
+test,DrugBAN,biosnap,seed_8,target,base,U,0.29270875,0.0
+test,DrugBAN,human,seed_4,target,base,U,0.2916665,0.0
+test,DrugBAN,human,seed_5,target,base,U,0.3873455,0.0
+test,DrugBAN,human,seed_6,target,base,U,0.5569445,0.0
+test,DrugBAN,human,seed_7,target,base,U,0.1429825,0.0
+test,DrugBAN,human,seed_8,target,base,U,0.289025,0.0
+test,PACE,bindingdb,seed_4,target,base,U,0.2106585,0.0
+test,PACE,bindingdb,seed_5,target,base,U,0.20268,0.0
+test,PACE,bindingdb,seed_6,target,base,U,0.295321,0.0
+test,PACE,bindingdb,seed_7,target,base,U,0.5695905,0.0
+test,PACE,bindingdb,seed_8,target,base,U,0.2408315,0.0
+test,PACE,biosnap,seed_4,target,base,U,0.25724175,0.0
+test,PACE,biosnap,seed_5,target,base,U,0.15162475,0.0
+test,PACE,biosnap,seed_6,target,base,U,0.19482824999999998,0.0
+test,PACE,biosnap,seed_7,target,base,U,0.240373,0.0
+test,PACE,biosnap,seed_8,target,base,U,0.22123125,0.0
+test,PACE,human,seed_4,target,base,U,0.556306,0.0
+test,PACE,human,seed_5,target,base,U,0.405647,0.0
+test,PACE,human,seed_6,target,base,U,0.49957949999999995,0.0
+test,PACE,human,seed_7,target,base,U,0.483781,0.0
+test,PACE,human,seed_8,target,base,U,0.303599,0.0
+test,TAPB,bindingdb,seed_4,target,base,U,,
+test,TAPB,bindingdb,seed_5,target,base,U,0.4209985,0.0
+test,TAPB,bindingdb,seed_6,target,base,U,,
+test,TAPB,bindingdb,seed_7,target,base,U,0.3295245,0.0
+test,TAPB,bindingdb,seed_8,target,base,U,0.3690955,0.0
+test,TAPB,biosnap,seed_4,target,base,U,0.169738,0.0
+test,TAPB,biosnap,seed_5,target,base,U,0.137234,0.0
+test,TAPB,biosnap,seed_6,target,base,U,0.12305975000000001,0.0
+test,TAPB,biosnap,seed_7,target,base,U,0.24264025,0.0
+test,TAPB,biosnap,seed_8,target,base,U,0.219158,0.0
+test,TAPB,human,seed_4,target,base,U,0.47337575,0.0
+test,TAPB,human,seed_5,target,base,U,0.36976,0.0
+test,TAPB,human,seed_6,target,base,U,0.217723,0.0
+test,TAPB,human,seed_7,target,base,U,0.3573385,0.0
+test,TAPB,human,seed_8,target,base,U,0.4036605,0.0
+test,DrugBAN,bindingdb,seed_4,target,base,P,0.543575,0.04609625000000006
+test,DrugBAN,bindingdb,seed_5,target,base,P,0.1758825,-0.07741199999999998
+test,DrugBAN,bindingdb,seed_6,target,base,P,0.18716075,0.04322175
+test,DrugBAN,bindingdb,seed_7,target,base,P,0.40574475,0.07351625
+test,DrugBAN,bindingdb,seed_8,target,base,P,0.333333,-0.03750050000000005
+test,DrugBAN,biosnap,seed_4,target,base,P,0.3232935,0.031063000000000007
+test,DrugBAN,biosnap,seed_5,target,base,P,0.4130265,0.06605950000000005
+test,DrugBAN,biosnap,seed_6,target,base,P,0.353334,0.0680385
+test,DrugBAN,biosnap,seed_7,target,base,P,0.58448525,0.13065949999999993
+test,DrugBAN,biosnap,seed_8,target,base,P,0.3188495,0.02614074999999999
+test,DrugBAN,human,seed_4,target,base,P,,
+test,DrugBAN,human,seed_5,target,base,P,0.30075,-0.08659549999999999
+test,DrugBAN,human,seed_6,target,base,P,,
+test,DrugBAN,human,seed_7,target,base,P,0.11901700000000001,-0.0239655
+test,DrugBAN,human,seed_8,target,base,P,0.2073045,-0.08172049999999997
+test,PACE,bindingdb,seed_4,target,base,P,0.2615265,0.050868
+test,PACE,bindingdb,seed_5,target,base,P,0.19571750000000002,-0.006962499999999983
+test,PACE,bindingdb,seed_6,target,base,P,0.257389,-0.03793200000000002
+test,PACE,bindingdb,seed_7,target,base,P,0.559935,-0.009655500000000039
+test,PACE,bindingdb,seed_8,target,base,P,0.21867875,-0.02215275
+test,PACE,biosnap,seed_4,target,base,P,0.33849975,0.081258
+test,PACE,biosnap,seed_5,target,base,P,0.3131205,0.16149575000000002
+test,PACE,biosnap,seed_6,target,base,P,0.24158125,0.04675300000000002
+test,PACE,biosnap,seed_7,target,base,P,0.18333375,-0.057039250000000014
+test,PACE,biosnap,seed_8,target,base,P,0.32671700000000004,0.10548575000000004
+test,PACE,human,seed_4,target,base,P,0.53358475,-0.022721249999999915
+test,PACE,human,seed_5,target,base,P,0.42349475000000003,0.01784775000000005
+test,PACE,human,seed_6,target,base,P,0.5124965,0.012917000000000067
+test,PACE,human,seed_7,target,base,P,0.42176800000000003,-0.062012999999999985
+test,PACE,human,seed_8,target,base,P,0.266115,-0.03748400000000002
+test,TAPB,bindingdb,seed_4,target,base,P,,
+test,TAPB,bindingdb,seed_5,target,base,P,0.44774375,0.026745249999999998
+test,TAPB,bindingdb,seed_6,target,base,P,,
+test,TAPB,bindingdb,seed_7,target,base,P,0.47800774999999995,0.14848324999999996
+test,TAPB,bindingdb,seed_8,target,base,P,0.47974575,0.11065025
+test,TAPB,biosnap,seed_4,target,base,P,0.22416225,0.05442425000000001
+test,TAPB,biosnap,seed_5,target,base,P,0.13855925,0.00132525
+test,TAPB,biosnap,seed_6,target,base,P,0.08003375,-0.04302600000000001
+test,TAPB,biosnap,seed_7,target,base,P,0.28994025,0.04730000000000001
+test,TAPB,biosnap,seed_8,target,base,P,0.33812825,0.11897025000000003
+test,TAPB,human,seed_4,target,base,P,0.37651225,-0.09686349999999999
+test,TAPB,human,seed_5,target,base,P,0.18623575,-0.18352424999999997
+test,TAPB,human,seed_6,target,base,P,0.67545575,0.45773275
+test,TAPB,human,seed_7,target,base,P,0.356355,-0.000983500000000026
+test,TAPB,human,seed_8,target,base,P,0.54761525,0.14395475000000002
+test,DrugBAN,bindingdb,seed_4,target,base,U+P,0.544107,0.04662825000000004
+test,DrugBAN,bindingdb,seed_5,target,base,U+P,0.17567675,-0.07761774999999999
+test,DrugBAN,bindingdb,seed_6,target,base,U+P,0.18712475,0.04318575000000002
+test,DrugBAN,bindingdb,seed_7,target,base,U+P,0.405634,0.07340550000000001
+test,DrugBAN,bindingdb,seed_8,target,base,U+P,0.333333,-0.03750050000000005
+test,DrugBAN,biosnap,seed_4,target,base,U+P,0.3232935,0.031063000000000007
+test,DrugBAN,biosnap,seed_5,target,base,U+P,0.4130265,0.06605950000000005
+test,DrugBAN,biosnap,seed_6,target,base,U+P,0.35328025,0.06798475000000004
+test,DrugBAN,biosnap,seed_7,target,base,U+P,0.58448525,0.13065949999999993
+test,DrugBAN,biosnap,seed_8,target,base,U+P,0.32001725,0.027308499999999958
+test,DrugBAN,human,seed_4,target,base,U+P,,
+test,DrugBAN,human,seed_5,target,base,U+P,0.30169599999999996,-0.08564950000000005
+test,DrugBAN,human,seed_6,target,base,U+P,,
+test,DrugBAN,human,seed_7,target,base,U+P,0.11623950000000001,-0.026743000000000003
+test,DrugBAN,human,seed_8,target,base,U+P,0.21506799999999998,-0.073957
+test,PACE,bindingdb,seed_4,target,base,U+P,0.2620235,0.05136500000000002
+test,PACE,bindingdb,seed_5,target,base,U+P,0.22792325,0.025243249999999995
+test,PACE,bindingdb,seed_6,target,base,U+P,0.267268,-0.028052999999999995
+test,PACE,bindingdb,seed_7,target,base,U+P,0.559935,-0.009655500000000039
+test,PACE,bindingdb,seed_8,target,base,U+P,0.21871975,-0.022111750000000013
+test,PACE,biosnap,seed_4,target,base,U+P,0.34074375,0.08350200000000002
+test,PACE,biosnap,seed_5,target,base,U+P,0.3109225,0.15929775
+test,PACE,biosnap,seed_6,target,base,U+P,0.24152825,0.04670000000000002
+test,PACE,biosnap,seed_7,target,base,U+P,0.18333375,-0.057039250000000014
+test,PACE,biosnap,seed_8,target,base,U+P,0.32655225,0.105321
+test,PACE,human,seed_4,target,base,U+P,0.5183825,-0.0379235
+test,PACE,human,seed_5,target,base,U+P,0.4241355,0.01848850000000002
+test,PACE,human,seed_6,target,base,U+P,0.514625,0.015045500000000045
+test,PACE,human,seed_7,target,base,U+P,0.43002,-0.053761
+test,PACE,human,seed_8,target,base,U+P,0.266115,-0.03748400000000002
+test,TAPB,bindingdb,seed_4,target,base,U+P,,
+test,TAPB,bindingdb,seed_5,target,base,U+P,0.4480545,0.027056000000000024
+test,TAPB,bindingdb,seed_6,target,base,U+P,,
+test,TAPB,bindingdb,seed_7,target,base,U+P,0.47800774999999995,0.14848324999999996
+test,TAPB,bindingdb,seed_8,target,base,U+P,0.48063725,0.11154175
+test,TAPB,biosnap,seed_4,target,base,U+P,0.2241915,0.05445349999999999
+test,TAPB,biosnap,seed_5,target,base,U+P,0.13730675,7.27500000000103e-05
+test,TAPB,biosnap,seed_6,target,base,U+P,0.08000825,-0.043051500000000006
+test,TAPB,biosnap,seed_7,target,base,U+P,0.289821,0.047180749999999994
+test,TAPB,biosnap,seed_8,target,base,U+P,0.33812825,0.11897025000000003
+test,TAPB,human,seed_4,target,base,U+P,0.32233375000000003,-0.15104199999999995
+test,TAPB,human,seed_5,target,base,U+P,0.19539825,-0.17436174999999998
+test,TAPB,human,seed_6,target,base,U+P,0.70233575,0.48461275000000004
+test,TAPB,human,seed_7,target,base,U+P,0.350136,-0.007202500000000001
+test,TAPB,human,seed_8,target,base,U+P,0.5412,0.13753950000000004
+test,DrugBAN,bindingdb,seed_4,target,base,U+E,0.5288815,0.031402750000000035
+test,DrugBAN,bindingdb,seed_5,target,base,U+E,0.44516325,0.19186875000000003
+test,DrugBAN,bindingdb,seed_6,target,base,U+E,0.41875125,0.27481225000000004
+test,DrugBAN,bindingdb,seed_7,target,base,U+E,0.7369365,0.404708
+test,DrugBAN,bindingdb,seed_8,target,base,U+E,1.0,0.6291665
+test,DrugBAN,biosnap,seed_4,target,base,U+E,0.529276,0.23704549999999996
+test,DrugBAN,biosnap,seed_5,target,base,U+E,0.696452,0.349485
+test,DrugBAN,biosnap,seed_6,target,base,U+E,0.49529175000000003,0.20999625000000005
+test,DrugBAN,biosnap,seed_7,target,base,U+E,0.80521625,0.35139049999999994
+test,DrugBAN,biosnap,seed_8,target,base,U+E,0.61487225,0.3221635
+test,DrugBAN,human,seed_4,target,base,U+E,,
+test,DrugBAN,human,seed_5,target,base,U+E,0.5022805,0.11493500000000001
+test,DrugBAN,human,seed_6,target,base,U+E,,
+test,DrugBAN,human,seed_7,target,base,U+E,0.0712535,-0.07172900000000001
+test,DrugBAN,human,seed_8,target,base,U+E,0.46052475,0.17149975
+test,PACE,bindingdb,seed_4,target,base,U+E,0.4099955,0.19933700000000001
+test,PACE,bindingdb,seed_5,target,base,U+E,0.716923,0.514243
+test,PACE,bindingdb,seed_6,target,base,U+E,0.426237,0.13091599999999998
+test,PACE,bindingdb,seed_7,target,base,U+E,0.5061975000000001,-0.06339299999999992
+test,PACE,bindingdb,seed_8,target,base,U+E,0.611626,0.3707945
+test,PACE,biosnap,seed_4,target,base,U+E,0.51411625,0.25687450000000006
+test,PACE,biosnap,seed_5,target,base,U+E,0.42090475,0.26927999999999996
+test,PACE,biosnap,seed_6,target,base,U+E,0.32405425,0.129226
+test,PACE,biosnap,seed_7,target,base,U+E,0.29830825,0.057935249999999994
+test,PACE,biosnap,seed_8,target,base,U+E,0.45861025,0.237379
+test,PACE,human,seed_4,target,base,U+E,0.48993625,-0.06636974999999995
+test,PACE,human,seed_5,target,base,U+E,0.34773975,-0.057907249999999966
+test,PACE,human,seed_6,target,base,U+E,0.628008,0.12842850000000006
+test,PACE,human,seed_7,target,base,U+E,0.33564700000000003,-0.148134
+test,PACE,human,seed_8,target,base,U+E,0.24683625,-0.05676275
+test,TAPB,bindingdb,seed_4,target,base,U+E,,
+test,TAPB,bindingdb,seed_5,target,base,U+E,0.559492,0.1384935
+test,TAPB,bindingdb,seed_6,target,base,U+E,,
+test,TAPB,bindingdb,seed_7,target,base,U+E,0.59495375,0.26542924999999995
+test,TAPB,bindingdb,seed_8,target,base,U+E,0.5228550000000001,0.15375950000000005
+test,TAPB,biosnap,seed_4,target,base,U+E,0.37481275,0.20507474999999997
+test,TAPB,biosnap,seed_5,target,base,U+E,0.35803675,0.22080275000000002
+test,TAPB,biosnap,seed_6,target,base,U+E,0.26863925,0.14557949999999997
+test,TAPB,biosnap,seed_7,target,base,U+E,0.390785,0.14814475
+test,TAPB,biosnap,seed_8,target,base,U+E,0.5349685,0.3158105
+test,TAPB,human,seed_4,target,base,U+E,0.46836425000000004,-0.0050114999999999466
+test,TAPB,human,seed_5,target,base,U+E,0.42323325,0.05347325000000003
+test,TAPB,human,seed_6,target,base,U+E,0.58983125,0.37210825000000003
+test,TAPB,human,seed_7,target,base,U+E,0.42204425,0.06470575
+test,TAPB,human,seed_8,target,base,U+E,0.51199725,0.10833674999999998
+test,DrugBAN,bindingdb,seed_4,target,base,U+P+E,0.5789467500000001,0.0814680000000001
+test,DrugBAN,bindingdb,seed_5,target,base,U+P+E,0.4243975,0.171103
+test,DrugBAN,bindingdb,seed_6,target,base,U+P+E,0.4112225,0.2672835
+test,DrugBAN,bindingdb,seed_7,target,base,U+P+E,0.6890955000000001,0.3568670000000001
+test,DrugBAN,bindingdb,seed_8,target,base,U+P+E,1.0,0.6291665
+test,DrugBAN,biosnap,seed_4,target,base,U+P+E,0.531653,0.23942250000000004
+test,DrugBAN,biosnap,seed_5,target,base,U+P+E,0.6679405,0.3209735000000001
+test,DrugBAN,biosnap,seed_6,target,base,U+P+E,0.5120439999999999,0.22674849999999996
+test,DrugBAN,biosnap,seed_7,target,base,U+P+E,0.80114325,0.34731749999999995
+test,DrugBAN,biosnap,seed_8,target,base,U+P+E,0.5748117500000001,0.28210300000000005
+test,DrugBAN,human,seed_4,target,base,U+P+E,,
+test,DrugBAN,human,seed_5,target,base,U+P+E,0.3781095,-0.009236000000000022
+test,DrugBAN,human,seed_6,target,base,U+P+E,,
+test,DrugBAN,human,seed_7,target,base,U+P+E,0.078112,-0.06487050000000001
+test,DrugBAN,human,seed_8,target,base,U+P+E,0.48382349999999996,0.19479849999999999
+test,PACE,bindingdb,seed_4,target,base,U+P+E,0.4063675,0.195709
+test,PACE,bindingdb,seed_5,target,base,U+P+E,0.7506390000000001,0.5479590000000001
+test,PACE,bindingdb,seed_6,target,base,U+P+E,0.3725305,0.07720949999999999
+test,PACE,bindingdb,seed_7,target,base,U+P+E,0.495498,-0.0740925
+test,PACE,bindingdb,seed_8,target,base,U+P+E,0.64928225,0.40845075
+test,PACE,biosnap,seed_4,target,base,U+P+E,0.5410425,0.28380075
+test,PACE,biosnap,seed_5,target,base,U+P+E,0.37757225,0.2259475
+test,PACE,biosnap,seed_6,target,base,U+P+E,0.326322,0.13149375000000002
+test,PACE,biosnap,seed_7,target,base,U+P+E,0.2530335,0.012660500000000019
+test,PACE,biosnap,seed_8,target,base,U+P+E,0.40830875,0.1870775
+test,PACE,human,seed_4,target,base,U+P+E,0.53790225,-0.01840374999999994
+test,PACE,human,seed_5,target,base,U+P+E,0.38207975,-0.023567249999999984
+test,PACE,human,seed_6,target,base,U+P+E,0.6429205,0.14334100000000005
+test,PACE,human,seed_7,target,base,U+P+E,0.32583675,-0.15794425
+test,PACE,human,seed_8,target,base,U+P+E,0.32238425000000004,0.01878525000000003
+test,TAPB,bindingdb,seed_4,target,base,U+P+E,,
+test,TAPB,bindingdb,seed_5,target,base,U+P+E,0.5758105,0.154812
+test,TAPB,bindingdb,seed_6,target,base,U+P+E,,
+test,TAPB,bindingdb,seed_7,target,base,U+P+E,0.6174625,0.287938
+test,TAPB,bindingdb,seed_8,target,base,U+P+E,0.562409,0.19331350000000003
+test,TAPB,biosnap,seed_4,target,base,U+P+E,0.385863,0.216125
+test,TAPB,biosnap,seed_5,target,base,U+P+E,0.3050035,0.1677695
+test,TAPB,biosnap,seed_6,target,base,U+P+E,0.27205225,0.14899249999999997
+test,TAPB,biosnap,seed_7,target,base,U+P+E,0.40467,0.16202974999999997
+test,TAPB,biosnap,seed_8,target,base,U+P+E,0.511239,0.29208100000000004
+test,TAPB,human,seed_4,target,base,U+P+E,0.636884,0.16350825000000002
+test,TAPB,human,seed_5,target,base,U+P+E,0.41076450000000003,0.041004500000000055
+test,TAPB,human,seed_6,target,base,U+P+E,0.7079267499999999,0.49020374999999994
+test,TAPB,human,seed_7,target,base,U+P+E,0.35403375000000004,-0.0033047499999999674
+test,TAPB,human,seed_8,target,base,U+P+E,0.53115925,0.12749875
+test,DrugBAN,bindingdb,seed_4,target,base,Validation-selected PAUSE,0.504947,0.007468250000000065
+test,DrugBAN,bindingdb,seed_5,target,base,Validation-selected PAUSE,0.2202635,-0.03303099999999998
+test,DrugBAN,bindingdb,seed_6,target,base,Validation-selected PAUSE,0.14393899999999998,0.0
+test,DrugBAN,bindingdb,seed_7,target,base,Validation-selected PAUSE,0.3322285,0.0
+test,DrugBAN,bindingdb,seed_8,target,base,Validation-selected PAUSE,0.32916650000000003,-0.04166700000000001
+test,DrugBAN,biosnap,seed_4,target,base,Validation-selected PAUSE,0.36334849999999996,0.07111799999999996
+test,DrugBAN,biosnap,seed_5,target,base,Validation-selected PAUSE,0.40704724999999997,0.06008025
+test,DrugBAN,biosnap,seed_6,target,base,Validation-selected PAUSE,0.3434345,0.058138999999999996
+test,DrugBAN,biosnap,seed_7,target,base,Validation-selected PAUSE,0.58448525,0.13065949999999993
+test,DrugBAN,biosnap,seed_8,target,base,Validation-selected PAUSE,0.30318825,0.010479499999999975
+test,DrugBAN,human,seed_4,target,base,Validation-selected PAUSE,0.2916665,0.0
+test,DrugBAN,human,seed_5,target,base,Validation-selected PAUSE,0.3873455,0.0
+test,DrugBAN,human,seed_6,target,base,Validation-selected PAUSE,0.5569445,0.0
+test,DrugBAN,human,seed_7,target,base,Validation-selected PAUSE,0.1429825,0.0
+test,DrugBAN,human,seed_8,target,base,Validation-selected PAUSE,0.357969,0.068944
+test,PACE,bindingdb,seed_4,target,base,Validation-selected PAUSE,0.22137425,0.010715749999999996
+test,PACE,bindingdb,seed_5,target,base,Validation-selected PAUSE,0.3971245,0.1944445
+test,PACE,bindingdb,seed_6,target,base,Validation-selected PAUSE,0.340373,0.04505199999999998
+test,PACE,bindingdb,seed_7,target,base,Validation-selected PAUSE,0.5460245,-0.023565999999999976
+test,PACE,bindingdb,seed_8,target,base,Validation-selected PAUSE,0.464762,0.2239305
+test,PACE,biosnap,seed_4,target,base,Validation-selected PAUSE,0.33849975,0.081258
+test,PACE,biosnap,seed_5,target,base,Validation-selected PAUSE,0.33579775,0.184173
+test,PACE,biosnap,seed_6,target,base,Validation-selected PAUSE,0.20663974999999998,0.011811500000000003
+test,PACE,biosnap,seed_7,target,base,Validation-selected PAUSE,0.240373,0.0
+test,PACE,biosnap,seed_8,target,base,Validation-selected PAUSE,0.32194725,0.10071600000000003
+test,PACE,human,seed_4,target,base,Validation-selected PAUSE,0.505037,-0.05126900000000001
+test,PACE,human,seed_5,target,base,Validation-selected PAUSE,0.40448,-0.0011669999999999736
+test,PACE,human,seed_6,target,base,Validation-selected PAUSE,0.49957949999999995,0.0
+test,PACE,human,seed_7,target,base,Validation-selected PAUSE,0.38238375,-0.10139725
+test,PACE,human,seed_8,target,base,Validation-selected PAUSE,0.29418275,-0.009416250000000015
+test,TAPB,bindingdb,seed_4,target,base,Validation-selected PAUSE,,
+test,TAPB,bindingdb,seed_5,target,base,Validation-selected PAUSE,0.4819295,0.06093100000000001
+test,TAPB,bindingdb,seed_6,target,base,Validation-selected PAUSE,,
+test,TAPB,bindingdb,seed_7,target,base,Validation-selected PAUSE,0.456372,0.1268475
+test,TAPB,bindingdb,seed_8,target,base,Validation-selected PAUSE,0.48741425,0.11831874999999997
+test,TAPB,biosnap,seed_4,target,base,Validation-selected PAUSE,0.187105,0.017366999999999994
+test,TAPB,biosnap,seed_5,target,base,Validation-selected PAUSE,0.12998425,-0.007249749999999999
+test,TAPB,biosnap,seed_6,target,base,Validation-selected PAUSE,0.12818675000000002,0.0051270000000000066
+test,TAPB,biosnap,seed_7,target,base,Validation-selected PAUSE,0.27831,0.03566975
+test,TAPB,biosnap,seed_8,target,base,Validation-selected PAUSE,0.26353825,0.04438024999999998
+test,TAPB,human,seed_4,target,base,Validation-selected PAUSE,0.47337575,0.0
+test,TAPB,human,seed_5,target,base,Validation-selected PAUSE,0.36496724999999997,-0.004792750000000012
+test,TAPB,human,seed_6,target,base,Validation-selected PAUSE,0.43715075000000003,0.21942775000000003
+test,TAPB,human,seed_7,target,base,Validation-selected PAUSE,0.38700075,0.02966225
+test,TAPB,human,seed_8,target,base,Validation-selected PAUSE,0.45178975,0.04812925000000001
+validation,DrugBAN,bindingdb,seed_4,drug,base,U,0.4982765,0.0
+validation,DrugBAN,bindingdb,seed_5,drug,base,U,0.29934925,0.0
+validation,DrugBAN,bindingdb,seed_6,drug,base,U,0.173825,0.0
+validation,DrugBAN,bindingdb,seed_7,drug,base,U,0.35995374999999996,0.0
+validation,DrugBAN,bindingdb,seed_8,drug,base,U,0.328583,0.0
+validation,DrugBAN,biosnap,seed_4,drug,base,U,0.30029849999999997,0.0
+validation,DrugBAN,biosnap,seed_5,drug,base,U,0.2725695,0.0
+validation,DrugBAN,biosnap,seed_6,drug,base,U,0.3609005,0.0
+validation,DrugBAN,biosnap,seed_7,drug,base,U,0.37475875,0.0
+validation,DrugBAN,biosnap,seed_8,drug,base,U,0.30763450000000003,0.0
+validation,DrugBAN,human,seed_4,drug,base,U,,
+validation,DrugBAN,human,seed_5,drug,base,U,,
+validation,DrugBAN,human,seed_6,drug,base,U,,
+validation,DrugBAN,human,seed_7,drug,base,U,,
+validation,DrugBAN,human,seed_8,drug,base,U,0.08225099999999999,0.0
+validation,PACE,bindingdb,seed_4,drug,base,U,0.20080725,0.0
+validation,PACE,bindingdb,seed_5,drug,base,U,0.3133175,0.0
+validation,PACE,bindingdb,seed_6,drug,base,U,0.24562050000000002,0.0
+validation,PACE,bindingdb,seed_7,drug,base,U,0.2249496666666667,0.0
+validation,PACE,bindingdb,seed_8,drug,base,U,0.23815125,0.0
+validation,PACE,biosnap,seed_4,drug,base,U,0.24876125000000002,0.0
+validation,PACE,biosnap,seed_5,drug,base,U,0.15644,0.0
+validation,PACE,biosnap,seed_6,drug,base,U,0.20341475,0.0
+validation,PACE,biosnap,seed_7,drug,base,U,0.14127725,0.0
+validation,PACE,biosnap,seed_8,drug,base,U,0.1881595,0.0
+validation,PACE,human,seed_4,drug,base,U,0.5646606666666666,0.0
+validation,PACE,human,seed_5,drug,base,U,0.53120175,0.0
+validation,PACE,human,seed_6,drug,base,U,0.75,0.0
+validation,PACE,human,seed_7,drug,base,U,,
+validation,PACE,human,seed_8,drug,base,U,,
+validation,TAPB,bindingdb,seed_4,drug,base,U,,
+validation,TAPB,bindingdb,seed_5,drug,base,U,0.40920325,0.0
+validation,TAPB,bindingdb,seed_6,drug,base,U,,
+validation,TAPB,bindingdb,seed_7,drug,base,U,0.36787125,0.0
+validation,TAPB,bindingdb,seed_8,drug,base,U,0.4067895,0.0
+validation,TAPB,biosnap,seed_4,drug,base,U,0.15882075,0.0
+validation,TAPB,biosnap,seed_5,drug,base,U,0.16630925,0.0
+validation,TAPB,biosnap,seed_6,drug,base,U,0.18956075,0.0
+validation,TAPB,biosnap,seed_7,drug,base,U,0.27797325,0.0
+validation,TAPB,biosnap,seed_8,drug,base,U,0.191006,0.0
+validation,TAPB,human,seed_4,drug,base,U,,
+validation,TAPB,human,seed_5,drug,base,U,0.537037,0.0
+validation,TAPB,human,seed_6,drug,base,U,0.122367,0.0
+validation,TAPB,human,seed_7,drug,base,U,0.33925525,0.0
+validation,TAPB,human,seed_8,drug,base,U,0.671958,0.0
+validation,DrugBAN,bindingdb,seed_4,drug,base,P,0.5301214999999999,0.0318449999999999
+validation,DrugBAN,bindingdb,seed_5,drug,base,P,0.33902525,0.03967599999999999
+validation,DrugBAN,bindingdb,seed_6,drug,base,P,0.1585975,-0.015227500000000005
+validation,DrugBAN,bindingdb,seed_7,drug,base,P,0.39720325,0.037249500000000046
+validation,DrugBAN,bindingdb,seed_8,drug,base,P,0.5050825,0.17649949999999998
+validation,DrugBAN,biosnap,seed_4,drug,base,P,0.3895085,0.08921000000000001
+validation,DrugBAN,biosnap,seed_5,drug,base,P,0.34684325,0.07427374999999997
+validation,DrugBAN,biosnap,seed_6,drug,base,P,0.42080375,0.059903249999999963
+validation,DrugBAN,biosnap,seed_7,drug,base,P,0.5021322500000001,0.12737350000000008
+validation,DrugBAN,biosnap,seed_8,drug,base,P,0.42444825,0.11681375
+validation,DrugBAN,human,seed_4,drug,base,P,,
+validation,DrugBAN,human,seed_5,drug,base,P,,
+validation,DrugBAN,human,seed_6,drug,base,P,,
+validation,DrugBAN,human,seed_7,drug,base,P,,
+validation,DrugBAN,human,seed_8,drug,base,P,0.2152775,0.13302650000000002
+validation,PACE,bindingdb,seed_4,drug,base,P,0.23595125,0.03514400000000001
+validation,PACE,bindingdb,seed_5,drug,base,P,0.2700315,-0.04328600000000005
+validation,PACE,bindingdb,seed_6,drug,base,P,0.199527,-0.04609350000000001
+validation,PACE,bindingdb,seed_7,drug,base,P,0.27907333333333334,0.05412366666666665
+validation,PACE,bindingdb,seed_8,drug,base,P,0.23072825,-0.007423000000000013
+validation,PACE,biosnap,seed_4,drug,base,P,0.3735905,0.12482924999999997
+validation,PACE,biosnap,seed_5,drug,base,P,0.216344,0.05990400000000001
+validation,PACE,biosnap,seed_6,drug,base,P,0.25532875,0.05191399999999999
+validation,PACE,biosnap,seed_7,drug,base,P,0.14471875,0.003441500000000014
+validation,PACE,biosnap,seed_8,drug,base,P,0.24441075,0.05625125
+validation,PACE,human,seed_4,drug,base,P,0.7314813333333333,0.16682066666666673
+validation,PACE,human,seed_5,drug,base,P,0.515766,-0.015435750000000081
+validation,PACE,human,seed_6,drug,base,P,1.0,0.25
+validation,PACE,human,seed_7,drug,base,P,,
+validation,PACE,human,seed_8,drug,base,P,,
+validation,TAPB,bindingdb,seed_4,drug,base,P,,
+validation,TAPB,bindingdb,seed_5,drug,base,P,0.3889935,-0.020209750000000026
+validation,TAPB,bindingdb,seed_6,drug,base,P,,
+validation,TAPB,bindingdb,seed_7,drug,base,P,0.364361,-0.0035102499999999925
+validation,TAPB,bindingdb,seed_8,drug,base,P,0.47548375,0.06869424999999996
+validation,TAPB,biosnap,seed_4,drug,base,P,0.193882,0.03506124999999999
+validation,TAPB,biosnap,seed_5,drug,base,P,0.23205075,0.06574150000000001
+validation,TAPB,biosnap,seed_6,drug,base,P,0.206605,0.01704425000000001
+validation,TAPB,biosnap,seed_7,drug,base,P,0.3340265,0.05605325
+validation,TAPB,biosnap,seed_8,drug,base,P,0.178704,-0.012302000000000007
+validation,TAPB,human,seed_4,drug,base,P,,
+validation,TAPB,human,seed_5,drug,base,P,0.611111,0.07407399999999997
+validation,TAPB,human,seed_6,drug,base,P,0.833333,0.710966
+validation,TAPB,human,seed_7,drug,base,P,0.19342975,-0.1458255
+validation,TAPB,human,seed_8,drug,base,P,0.455026,-0.21693200000000007
+validation,DrugBAN,bindingdb,seed_4,drug,base,U+P,0.5298615,0.031584999999999974
+validation,DrugBAN,bindingdb,seed_5,drug,base,U+P,0.3384515,0.039102250000000005
+validation,DrugBAN,bindingdb,seed_6,drug,base,U+P,0.15867925,-0.015145750000000013
+validation,DrugBAN,bindingdb,seed_7,drug,base,U+P,0.39480149999999997,0.03484775000000001
+validation,DrugBAN,bindingdb,seed_8,drug,base,U+P,0.534316,0.205733
+validation,DrugBAN,biosnap,seed_4,drug,base,U+P,0.388973,0.08867450000000004
+validation,DrugBAN,biosnap,seed_5,drug,base,U+P,0.3457835,0.073214
+validation,DrugBAN,biosnap,seed_6,drug,base,U+P,0.420271,0.05937049999999999
+validation,DrugBAN,biosnap,seed_7,drug,base,U+P,0.50209575,0.12733699999999998
+validation,DrugBAN,biosnap,seed_8,drug,base,U+P,0.426944,0.11930949999999996
+validation,DrugBAN,human,seed_4,drug,base,U+P,,
+validation,DrugBAN,human,seed_5,drug,base,U+P,,
+validation,DrugBAN,human,seed_6,drug,base,U+P,,
+validation,DrugBAN,human,seed_7,drug,base,U+P,,
+validation,DrugBAN,human,seed_8,drug,base,U+P,0.222917,0.140666
+validation,PACE,bindingdb,seed_4,drug,base,U+P,0.23563450000000002,0.03482725000000003
+validation,PACE,bindingdb,seed_5,drug,base,U+P,0.27609225,-0.03722525000000004
+validation,PACE,bindingdb,seed_6,drug,base,U+P,0.19900649999999998,-0.046614000000000044
+validation,PACE,bindingdb,seed_7,drug,base,U+P,0.2790553333333334,0.05410566666666669
+validation,PACE,bindingdb,seed_8,drug,base,U+P,0.23210275,-0.006048500000000012
+validation,PACE,biosnap,seed_4,drug,base,U+P,0.37241525,0.12365399999999996
+validation,PACE,biosnap,seed_5,drug,base,U+P,0.21631525,0.05987524999999999
+validation,PACE,biosnap,seed_6,drug,base,U+P,0.25545575,0.052040999999999976
+validation,PACE,biosnap,seed_7,drug,base,U+P,0.14476125,0.003484000000000015
+validation,PACE,biosnap,seed_8,drug,base,U+P,0.24459774999999997,0.05643824999999997
+validation,PACE,human,seed_4,drug,base,U+P,0.725926,0.16126533333333337
+validation,PACE,human,seed_5,drug,base,U+P,0.55501575,0.023814000000000002
+validation,PACE,human,seed_6,drug,base,U+P,0.75,0.0
+validation,PACE,human,seed_7,drug,base,U+P,,
+validation,PACE,human,seed_8,drug,base,U+P,,
+validation,TAPB,bindingdb,seed_4,drug,base,U+P,,
+validation,TAPB,bindingdb,seed_5,drug,base,U+P,0.388798,-0.02040525000000004
+validation,TAPB,bindingdb,seed_6,drug,base,U+P,,
+validation,TAPB,bindingdb,seed_7,drug,base,U+P,0.36467499999999997,-0.0031962500000000116
+validation,TAPB,bindingdb,seed_8,drug,base,U+P,0.47432275,0.06753324999999999
+validation,TAPB,biosnap,seed_4,drug,base,U+P,0.19377175,0.03495099999999998
+validation,TAPB,biosnap,seed_5,drug,base,U+P,0.231964,0.06565475000000001
+validation,TAPB,biosnap,seed_6,drug,base,U+P,0.20713075,0.017570000000000002
+validation,TAPB,biosnap,seed_7,drug,base,U+P,0.33168575,0.053712499999999996
+validation,TAPB,biosnap,seed_8,drug,base,U+P,0.17876575,-0.012240250000000008
+validation,TAPB,human,seed_4,drug,base,U+P,,
+validation,TAPB,human,seed_5,drug,base,U+P,0.527778,-0.009259000000000017
+validation,TAPB,human,seed_6,drug,base,U+P,0.833333,0.710966
+validation,TAPB,human,seed_7,drug,base,U+P,0.1903875,-0.14886775000000002
+validation,TAPB,human,seed_8,drug,base,U+P,0.472222,-0.19973600000000008
+validation,DrugBAN,bindingdb,seed_4,drug,base,U+E,0.54787125,0.04959475000000002
+validation,DrugBAN,bindingdb,seed_5,drug,base,U+E,0.44437000000000004,0.14502075000000003
+validation,DrugBAN,bindingdb,seed_6,drug,base,U+E,0.353809,0.17998399999999998
+validation,DrugBAN,bindingdb,seed_7,drug,base,U+E,0.619071,0.2591172500000001
+validation,DrugBAN,bindingdb,seed_8,drug,base,U+E,0.6927954999999999,0.3642124999999999
+validation,DrugBAN,biosnap,seed_4,drug,base,U+E,0.5775365,0.27723800000000004
+validation,DrugBAN,biosnap,seed_5,drug,base,U+E,0.527497,0.2549275
+validation,DrugBAN,biosnap,seed_6,drug,base,U+E,0.65015175,0.28925125
+validation,DrugBAN,biosnap,seed_7,drug,base,U+E,0.65387275,0.27911400000000003
+validation,DrugBAN,biosnap,seed_8,drug,base,U+E,0.59131175,0.28367725
+validation,DrugBAN,human,seed_4,drug,base,U+E,,
+validation,DrugBAN,human,seed_5,drug,base,U+E,,
+validation,DrugBAN,human,seed_6,drug,base,U+E,,
+validation,DrugBAN,human,seed_7,drug,base,U+E,,
+validation,DrugBAN,human,seed_8,drug,base,U+E,0.395833,0.313582
+validation,PACE,bindingdb,seed_4,drug,base,U+E,0.43006075,0.2292535
+validation,PACE,bindingdb,seed_5,drug,base,U+E,0.612236,0.2989185
+validation,PACE,bindingdb,seed_6,drug,base,U+E,0.4199875,0.174367
+validation,PACE,bindingdb,seed_7,drug,base,U+E,0.703344,0.47839433333333325
+validation,PACE,bindingdb,seed_8,drug,base,U+E,0.49253099999999994,0.2543797499999999
+validation,PACE,biosnap,seed_4,drug,base,U+E,0.47931475,0.2305535
+validation,PACE,biosnap,seed_5,drug,base,U+E,0.323158,0.166718
+validation,PACE,biosnap,seed_6,drug,base,U+E,0.359686,0.15627125
+validation,PACE,biosnap,seed_7,drug,base,U+E,0.2789515,0.13767425000000003
+validation,PACE,biosnap,seed_8,drug,base,U+E,0.34512075,0.15696124999999997
+validation,PACE,human,seed_4,drug,base,U+E,0.5650793333333334,0.0004186666666667893
+validation,PACE,human,seed_5,drug,base,U+E,0.5814285,0.05022674999999999
+validation,PACE,human,seed_6,drug,base,U+E,1.0,0.25
+validation,PACE,human,seed_7,drug,base,U+E,,
+validation,PACE,human,seed_8,drug,base,U+E,,
+validation,TAPB,bindingdb,seed_4,drug,base,U+E,,
+validation,TAPB,bindingdb,seed_5,drug,base,U+E,0.52775975,0.11855649999999995
+validation,TAPB,bindingdb,seed_6,drug,base,U+E,,
+validation,TAPB,bindingdb,seed_7,drug,base,U+E,0.52306475,0.15519349999999998
+validation,TAPB,bindingdb,seed_8,drug,base,U+E,0.526392,0.11960249999999994
+validation,TAPB,biosnap,seed_4,drug,base,U+E,0.325863,0.16704225
+validation,TAPB,biosnap,seed_5,drug,base,U+E,0.30819625,0.141887
+validation,TAPB,biosnap,seed_6,drug,base,U+E,0.244306,0.054745249999999995
+validation,TAPB,biosnap,seed_7,drug,base,U+E,0.38545675,0.10748350000000001
+validation,TAPB,biosnap,seed_8,drug,base,U+E,0.22482325,0.03381724999999999
+validation,TAPB,human,seed_4,drug,base,U+E,,
+validation,TAPB,human,seed_5,drug,base,U+E,1.0,0.462963
+validation,TAPB,human,seed_6,drug,base,U+E,0.805556,0.683189
+validation,TAPB,human,seed_7,drug,base,U+E,0.70245025,0.36319500000000005
+validation,TAPB,human,seed_8,drug,base,U+E,0.533333,-0.1386250000000001
+validation,DrugBAN,bindingdb,seed_4,drug,base,U+P+E,0.5766377500000001,0.07836125000000005
+validation,DrugBAN,bindingdb,seed_5,drug,base,U+P+E,0.46175475,0.16240549999999998
+validation,DrugBAN,bindingdb,seed_6,drug,base,U+P+E,0.34630625000000004,0.17248125000000003
+validation,DrugBAN,bindingdb,seed_7,drug,base,U+P+E,0.62666875,0.26671500000000004
+validation,DrugBAN,bindingdb,seed_8,drug,base,U+P+E,0.712661,0.384078
+validation,DrugBAN,biosnap,seed_4,drug,base,U+P+E,0.53820925,0.23791075
+validation,DrugBAN,biosnap,seed_5,drug,base,U+P+E,0.5050115,0.23244199999999993
+validation,DrugBAN,biosnap,seed_6,drug,base,U+P+E,0.64784625,0.28694574999999994
+validation,DrugBAN,biosnap,seed_7,drug,base,U+P+E,0.6379,0.26314125000000005
+validation,DrugBAN,biosnap,seed_8,drug,base,U+P+E,0.5713635,0.263729
+validation,DrugBAN,human,seed_4,drug,base,U+P+E,,
+validation,DrugBAN,human,seed_5,drug,base,U+P+E,,
+validation,DrugBAN,human,seed_6,drug,base,U+P+E,,
+validation,DrugBAN,human,seed_7,drug,base,U+P+E,,
+validation,DrugBAN,human,seed_8,drug,base,U+P+E,0.4125,0.330249
+validation,PACE,bindingdb,seed_4,drug,base,U+P+E,0.415234,0.21442675
+validation,PACE,bindingdb,seed_5,drug,base,U+P+E,0.59683025,0.28351275
+validation,PACE,bindingdb,seed_6,drug,base,U+P+E,0.39801699999999995,0.15239649999999993
+validation,PACE,bindingdb,seed_7,drug,base,U+P+E,0.687153,0.4622033333333333
+validation,PACE,bindingdb,seed_8,drug,base,U+P+E,0.50237825,0.264227
+validation,PACE,biosnap,seed_4,drug,base,U+P+E,0.45741475,0.20865349999999996
+validation,PACE,biosnap,seed_5,drug,base,U+P+E,0.3209135,0.16447350000000002
+validation,PACE,biosnap,seed_6,drug,base,U+P+E,0.33123275,0.12781800000000001
+validation,PACE,biosnap,seed_7,drug,base,U+P+E,0.2829345,0.14165724999999998
+validation,PACE,biosnap,seed_8,drug,base,U+P+E,0.342762,0.1546025
+validation,PACE,human,seed_4,drug,base,U+P+E,0.837037,0.27237633333333344
+validation,PACE,human,seed_5,drug,base,U+P+E,0.6223047500000001,0.09110300000000005
+validation,PACE,human,seed_6,drug,base,U+P+E,1.0,0.25
+validation,PACE,human,seed_7,drug,base,U+P+E,,
+validation,PACE,human,seed_8,drug,base,U+P+E,,
+validation,TAPB,bindingdb,seed_4,drug,base,U+P+E,,
+validation,TAPB,bindingdb,seed_5,drug,base,U+P+E,0.5234115,0.11420825000000001
+validation,TAPB,bindingdb,seed_6,drug,base,U+P+E,,
+validation,TAPB,bindingdb,seed_7,drug,base,U+P+E,0.52303375,0.15516249999999998
+validation,TAPB,bindingdb,seed_8,drug,base,U+P+E,0.52352975,0.11674024999999999
+validation,TAPB,biosnap,seed_4,drug,base,U+P+E,0.3075705,0.14874975000000001
+validation,TAPB,biosnap,seed_5,drug,base,U+P+E,0.259616,0.09330675000000002
+validation,TAPB,biosnap,seed_6,drug,base,U+P+E,0.1872105,-0.002350249999999998
+validation,TAPB,biosnap,seed_7,drug,base,U+P+E,0.39809825,0.12012499999999998
+validation,TAPB,biosnap,seed_8,drug,base,U+P+E,0.2151355,0.024129499999999998
+validation,TAPB,human,seed_4,drug,base,U+P+E,,
+validation,TAPB,human,seed_5,drug,base,U+P+E,0.777778,0.24074099999999998
+validation,TAPB,human,seed_6,drug,base,U+P+E,1.0,0.877633
+validation,TAPB,human,seed_7,drug,base,U+P+E,0.507101,0.16784575000000002
+validation,TAPB,human,seed_8,drug,base,U+P+E,0.442063,-0.22989500000000007
+validation,DrugBAN,bindingdb,seed_4,drug,base,Validation-selected PAUSE,0.5546345,0.05635800000000002
+validation,DrugBAN,bindingdb,seed_5,drug,base,Validation-selected PAUSE,0.441722,0.14237275
+validation,DrugBAN,bindingdb,seed_6,drug,base,Validation-selected PAUSE,0.353809,0.17998399999999998
+validation,DrugBAN,bindingdb,seed_7,drug,base,Validation-selected PAUSE,0.6286985,0.2687447500000001
+validation,DrugBAN,bindingdb,seed_8,drug,base,Validation-selected PAUSE,0.6927954999999999,0.3642124999999999
+validation,DrugBAN,biosnap,seed_4,drug,base,Validation-selected PAUSE,0.5775365,0.27723800000000004
+validation,DrugBAN,biosnap,seed_5,drug,base,Validation-selected PAUSE,0.527497,0.2549275
+validation,DrugBAN,biosnap,seed_6,drug,base,Validation-selected PAUSE,0.65454125,0.29364074999999995
+validation,DrugBAN,biosnap,seed_7,drug,base,Validation-selected PAUSE,0.65387275,0.27911400000000003
+validation,DrugBAN,biosnap,seed_8,drug,base,Validation-selected PAUSE,0.59131175,0.28367725
+validation,DrugBAN,human,seed_4,drug,base,Validation-selected PAUSE,,
+validation,DrugBAN,human,seed_5,drug,base,Validation-selected PAUSE,,
+validation,DrugBAN,human,seed_6,drug,base,Validation-selected PAUSE,,
+validation,DrugBAN,human,seed_7,drug,base,Validation-selected PAUSE,,
+validation,DrugBAN,human,seed_8,drug,base,Validation-selected PAUSE,0.2152775,0.13302650000000002
+validation,PACE,bindingdb,seed_4,drug,base,Validation-selected PAUSE,0.43006075,0.2292535
+validation,PACE,bindingdb,seed_5,drug,base,Validation-selected PAUSE,0.612236,0.2989185
+validation,PACE,bindingdb,seed_6,drug,base,Validation-selected PAUSE,0.4199875,0.174367
+validation,PACE,bindingdb,seed_7,drug,base,Validation-selected PAUSE,0.703344,0.47839433333333325
+validation,PACE,bindingdb,seed_8,drug,base,Validation-selected PAUSE,0.4978435,0.25969224999999996
+validation,PACE,biosnap,seed_4,drug,base,Validation-selected PAUSE,0.47931475,0.2305535
+validation,PACE,biosnap,seed_5,drug,base,Validation-selected PAUSE,0.323158,0.166718
+validation,PACE,biosnap,seed_6,drug,base,Validation-selected PAUSE,0.359686,0.15627125
+validation,PACE,biosnap,seed_7,drug,base,Validation-selected PAUSE,0.2789515,0.13767425000000003
+validation,PACE,biosnap,seed_8,drug,base,Validation-selected PAUSE,0.34512075,0.15696124999999997
+validation,PACE,human,seed_4,drug,base,Validation-selected PAUSE,0.8495370000000001,0.2848763333333335
+validation,PACE,human,seed_5,drug,base,Validation-selected PAUSE,0.633186,0.10198425
+validation,PACE,human,seed_6,drug,base,Validation-selected PAUSE,1.0,0.25
+validation,PACE,human,seed_7,drug,base,Validation-selected PAUSE,,
+validation,PACE,human,seed_8,drug,base,Validation-selected PAUSE,,
+validation,TAPB,bindingdb,seed_4,drug,base,Validation-selected PAUSE,,
+validation,TAPB,bindingdb,seed_5,drug,base,Validation-selected PAUSE,0.52775975,0.11855649999999995
+validation,TAPB,bindingdb,seed_6,drug,base,Validation-selected PAUSE,,
+validation,TAPB,bindingdb,seed_7,drug,base,Validation-selected PAUSE,0.52306475,0.15519349999999998
+validation,TAPB,bindingdb,seed_8,drug,base,Validation-selected PAUSE,0.526392,0.11960249999999994
+validation,TAPB,biosnap,seed_4,drug,base,Validation-selected PAUSE,0.325863,0.16704225
+validation,TAPB,biosnap,seed_5,drug,base,Validation-selected PAUSE,0.22666575,0.06035650000000001
+validation,TAPB,biosnap,seed_6,drug,base,Validation-selected PAUSE,0.21190949999999997,0.022348749999999973
+validation,TAPB,biosnap,seed_7,drug,base,Validation-selected PAUSE,0.37778875,0.0998155
+validation,TAPB,biosnap,seed_8,drug,base,Validation-selected PAUSE,0.2254985,0.03449249999999998
+validation,TAPB,human,seed_4,drug,base,Validation-selected PAUSE,,
+validation,TAPB,human,seed_5,drug,base,Validation-selected PAUSE,1.0,0.462963
+validation,TAPB,human,seed_6,drug,base,Validation-selected PAUSE,1.0,0.877633
+validation,TAPB,human,seed_7,drug,base,Validation-selected PAUSE,0.68412975,0.3448745
+validation,TAPB,human,seed_8,drug,base,Validation-selected PAUSE,0.671958,0.0
+validation,DrugBAN,bindingdb,seed_4,target,base,U,0.43799775,0.0
+validation,DrugBAN,bindingdb,seed_5,target,base,U,0.26934775,0.0
+validation,DrugBAN,bindingdb,seed_6,target,base,U,0.197797,0.0
+validation,DrugBAN,bindingdb,seed_7,target,base,U,0.4027195,0.0
+validation,DrugBAN,bindingdb,seed_8,target,base,U,0.339507,0.0
+validation,DrugBAN,biosnap,seed_4,target,base,U,0.327414,0.0
+validation,DrugBAN,biosnap,seed_5,target,base,U,0.28297925,0.0
+validation,DrugBAN,biosnap,seed_6,target,base,U,0.36435275,0.0
+validation,DrugBAN,biosnap,seed_7,target,base,U,0.30154975,0.0
+validation,DrugBAN,biosnap,seed_8,target,base,U,0.29823,0.0
+validation,DrugBAN,human,seed_4,target,base,U,,
+validation,DrugBAN,human,seed_5,target,base,U,,
+validation,DrugBAN,human,seed_6,target,base,U,,
+validation,DrugBAN,human,seed_7,target,base,U,0.666667,0.0
+validation,DrugBAN,human,seed_8,target,base,U,0.138889,0.0
+validation,PACE,bindingdb,seed_4,target,base,U,0.258739,0.0
+validation,PACE,bindingdb,seed_5,target,base,U,0.38165899999999997,0.0
+validation,PACE,bindingdb,seed_6,target,base,U,0.2090125,0.0
+validation,PACE,bindingdb,seed_7,target,base,U,0.28120500000000004,0.0
+validation,PACE,bindingdb,seed_8,target,base,U,0.3014605,0.0
+validation,PACE,biosnap,seed_4,target,base,U,0.2682,0.0
+validation,PACE,biosnap,seed_5,target,base,U,0.14850750000000001,0.0
+validation,PACE,biosnap,seed_6,target,base,U,0.19536325,0.0
+validation,PACE,biosnap,seed_7,target,base,U,0.131778,0.0
+validation,PACE,biosnap,seed_8,target,base,U,0.211811,0.0
+validation,PACE,human,seed_4,target,base,U,0.65608475,0.0
+validation,PACE,human,seed_5,target,base,U,0.3633,0.0
+validation,PACE,human,seed_6,target,base,U,,
+validation,PACE,human,seed_7,target,base,U,0.1071895,0.0
+validation,PACE,human,seed_8,target,base,U,0.242246,0.0
+validation,TAPB,bindingdb,seed_4,target,base,U,0.916667,0.0
+validation,TAPB,bindingdb,seed_5,target,base,U,0.402872,0.0
+validation,TAPB,bindingdb,seed_6,target,base,U,,
+validation,TAPB,bindingdb,seed_7,target,base,U,0.3607375,0.0
+validation,TAPB,bindingdb,seed_8,target,base,U,0.41855875,0.0
+validation,TAPB,biosnap,seed_4,target,base,U,0.149592,0.0
+validation,TAPB,biosnap,seed_5,target,base,U,0.18215275,0.0
+validation,TAPB,biosnap,seed_6,target,base,U,0.22768075,0.0
+validation,TAPB,biosnap,seed_7,target,base,U,0.28232525,0.0
+validation,TAPB,biosnap,seed_8,target,base,U,0.16760799999999998,0.0
+validation,TAPB,human,seed_4,target,base,U,0.5498734999999999,0.0
+validation,TAPB,human,seed_5,target,base,U,0.088889,0.0
+validation,TAPB,human,seed_6,target,base,U,0.20679933333333334,0.0
+validation,TAPB,human,seed_7,target,base,U,0.5075873333333333,0.0
+validation,TAPB,human,seed_8,target,base,U,0.215873,0.0
+validation,DrugBAN,bindingdb,seed_4,target,base,P,0.53685225,0.09885450000000001
+validation,DrugBAN,bindingdb,seed_5,target,base,P,0.442948,0.17360025
+validation,DrugBAN,bindingdb,seed_6,target,base,P,0.413203,0.215406
+validation,DrugBAN,bindingdb,seed_7,target,base,P,0.37271625,-0.03000324999999998
+validation,DrugBAN,bindingdb,seed_8,target,base,P,0.493873,0.154366
+validation,DrugBAN,biosnap,seed_4,target,base,P,0.3943895,0.06697550000000002
+validation,DrugBAN,biosnap,seed_5,target,base,P,0.38294025,0.09996099999999997
+validation,DrugBAN,biosnap,seed_6,target,base,P,0.433103,0.06875025000000001
+validation,DrugBAN,biosnap,seed_7,target,base,P,0.5252555,0.22370574999999998
+validation,DrugBAN,biosnap,seed_8,target,base,P,0.398764,0.10053400000000001
+validation,DrugBAN,human,seed_4,target,base,P,,
+validation,DrugBAN,human,seed_5,target,base,P,,
+validation,DrugBAN,human,seed_6,target,base,P,,
+validation,DrugBAN,human,seed_7,target,base,P,0.321429,-0.345238
+validation,DrugBAN,human,seed_8,target,base,P,0.194444,0.05555499999999999
+validation,PACE,bindingdb,seed_4,target,base,P,0.277494,0.01875500000000002
+validation,PACE,bindingdb,seed_5,target,base,P,0.31405099999999997,-0.067608
+validation,PACE,bindingdb,seed_6,target,base,P,0.142149,-0.06686349999999999
+validation,PACE,bindingdb,seed_7,target,base,P,0.24334450000000002,-0.03786050000000002
+validation,PACE,bindingdb,seed_8,target,base,P,0.24306275,-0.058397750000000026
+validation,PACE,biosnap,seed_4,target,base,P,0.38686675000000004,0.11866675000000004
+validation,PACE,biosnap,seed_5,target,base,P,0.2559625,0.10745499999999997
+validation,PACE,biosnap,seed_6,target,base,P,0.23343925000000001,0.038076000000000026
+validation,PACE,biosnap,seed_7,target,base,P,0.127853,-0.003925000000000012
+validation,PACE,biosnap,seed_8,target,base,P,0.26972275,0.05791175000000001
+validation,PACE,human,seed_4,target,base,P,0.886326,0.23024124999999995
+validation,PACE,human,seed_5,target,base,P,0.68422625,0.32092625
+validation,PACE,human,seed_6,target,base,P,,
+validation,PACE,human,seed_7,target,base,P,0.625,0.5178105
+validation,PACE,human,seed_8,target,base,P,0.644444,0.40219800000000006
+validation,TAPB,bindingdb,seed_4,target,base,P,,
+validation,TAPB,bindingdb,seed_5,target,base,P,0.2985975,-0.10427449999999999
+validation,TAPB,bindingdb,seed_6,target,base,P,,
+validation,TAPB,bindingdb,seed_7,target,base,P,0.4259585,0.06522100000000003
+validation,TAPB,bindingdb,seed_8,target,base,P,0.41790725,-0.0006514999999999715
+validation,TAPB,biosnap,seed_4,target,base,P,0.20810425,0.05851224999999999
+validation,TAPB,biosnap,seed_5,target,base,P,0.27157875,0.08942599999999998
+validation,TAPB,biosnap,seed_6,target,base,P,0.2742635,0.046582750000000006
+validation,TAPB,biosnap,seed_7,target,base,P,0.340542,0.058216749999999984
+validation,TAPB,biosnap,seed_8,target,base,P,0.21151625,0.04390825000000001
+validation,TAPB,human,seed_4,target,base,P,0.17982800000000002,-0.3700454999999999
+validation,TAPB,human,seed_5,target,base,P,0.10101,0.012121000000000007
+validation,TAPB,human,seed_6,target,base,P,0.837037,0.6302376666666667
+validation,TAPB,human,seed_7,target,base,P,0.5458926666666667,0.03830533333333341
+validation,TAPB,human,seed_8,target,base,P,0.487037,0.27116399999999996
+validation,DrugBAN,bindingdb,seed_4,target,base,U+P,0.53681525,0.09881749999999995
+validation,DrugBAN,bindingdb,seed_5,target,base,U+P,0.44253525,0.1731875
+validation,DrugBAN,bindingdb,seed_6,target,base,U+P,0.413228,0.21543099999999998
+validation,DrugBAN,bindingdb,seed_7,target,base,U+P,0.372915,-0.02980450000000001
+validation,DrugBAN,bindingdb,seed_8,target,base,U+P,0.5448585,0.20535150000000002
+validation,DrugBAN,biosnap,seed_4,target,base,U+P,0.394165,0.066751
+validation,DrugBAN,biosnap,seed_5,target,base,U+P,0.382859,0.09987974999999999
+validation,DrugBAN,biosnap,seed_6,target,base,U+P,0.43329475,0.068942
+validation,DrugBAN,biosnap,seed_7,target,base,U+P,0.5252887500000001,0.22373900000000008
+validation,DrugBAN,biosnap,seed_8,target,base,U+P,0.39857325,0.10034325
+validation,DrugBAN,human,seed_4,target,base,U+P,,
+validation,DrugBAN,human,seed_5,target,base,U+P,,
+validation,DrugBAN,human,seed_6,target,base,U+P,,
+validation,DrugBAN,human,seed_7,target,base,U+P,0.333333,-0.333334
+validation,DrugBAN,human,seed_8,target,base,U+P,0.191667,0.05277799999999999
+validation,PACE,bindingdb,seed_4,target,base,U+P,0.27533575,0.016596749999999993
+validation,PACE,bindingdb,seed_5,target,base,U+P,0.3005825,-0.0810765
+validation,PACE,bindingdb,seed_6,target,base,U+P,0.1423375,-0.06667499999999998
+validation,PACE,bindingdb,seed_7,target,base,U+P,0.24382600000000001,-0.03737900000000002
+validation,PACE,bindingdb,seed_8,target,base,U+P,0.24256225,-0.05889825000000001
+validation,PACE,biosnap,seed_4,target,base,U+P,0.38664275,0.11844274999999999
+validation,PACE,biosnap,seed_5,target,base,U+P,0.25495975000000004,0.10645225000000003
+validation,PACE,biosnap,seed_6,target,base,U+P,0.232961,0.03759775000000001
+validation,PACE,biosnap,seed_7,target,base,U+P,0.12779775,-0.0039802500000000185
+validation,PACE,biosnap,seed_8,target,base,U+P,0.2697395,0.05792850000000002
+validation,PACE,human,seed_4,target,base,U+P,0.886326,0.23024124999999995
+validation,PACE,human,seed_5,target,base,U+P,0.65843275,0.29513275
+validation,PACE,human,seed_6,target,base,U+P,,
+validation,PACE,human,seed_7,target,base,U+P,0.625,0.5178105
+validation,PACE,human,seed_8,target,base,U+P,0.644444,0.40219800000000006
+validation,TAPB,bindingdb,seed_4,target,base,U+P,,
+validation,TAPB,bindingdb,seed_5,target,base,U+P,0.29861525,-0.10425675000000001
+validation,TAPB,bindingdb,seed_6,target,base,U+P,,
+validation,TAPB,bindingdb,seed_7,target,base,U+P,0.425946,0.0652085
+validation,TAPB,bindingdb,seed_8,target,base,U+P,0.417737,-0.0008217499999999545
+validation,TAPB,biosnap,seed_4,target,base,U+P,0.20829225,0.05870025000000001
+validation,TAPB,biosnap,seed_5,target,base,U+P,0.2712525,0.08909975
+validation,TAPB,biosnap,seed_6,target,base,U+P,0.272331,0.04465025
+validation,TAPB,biosnap,seed_7,target,base,U+P,0.33974375,0.05741849999999998
+validation,TAPB,biosnap,seed_8,target,base,U+P,0.21161924999999998,0.04401125
+validation,TAPB,human,seed_4,target,base,U+P,0.1806275,-0.3692459999999999
+validation,TAPB,human,seed_5,target,base,U+P,0.126984,0.03809500000000002
+validation,TAPB,human,seed_6,target,base,U+P,0.8092593333333333,0.60246
+validation,TAPB,human,seed_7,target,base,U+P,0.5305046666666667,0.022917333333333456
+validation,TAPB,human,seed_8,target,base,U+P,0.484007,0.268134
+validation,DrugBAN,bindingdb,seed_4,target,base,U+E,0.388775,-0.04922275000000004
+validation,DrugBAN,bindingdb,seed_5,target,base,U+E,0.2712555,0.0019077499999999858
+validation,DrugBAN,bindingdb,seed_6,target,base,U+E,0.273551,0.07575399999999999
+validation,DrugBAN,bindingdb,seed_7,target,base,U+E,0.445023,0.042303499999999994
+validation,DrugBAN,bindingdb,seed_8,target,base,U+E,0.47637050000000003,0.13686350000000003
+validation,DrugBAN,biosnap,seed_4,target,base,U+E,0.4411405,0.11372650000000001
+validation,DrugBAN,biosnap,seed_5,target,base,U+E,0.325112,0.04213275
+validation,DrugBAN,biosnap,seed_6,target,base,U+E,0.39517599999999997,0.03082324999999997
+validation,DrugBAN,biosnap,seed_7,target,base,U+E,0.52276725,0.2212175
+validation,DrugBAN,biosnap,seed_8,target,base,U+E,0.3486505,0.05042049999999998
+validation,DrugBAN,human,seed_4,target,base,U+E,,
+validation,DrugBAN,human,seed_5,target,base,U+E,,
+validation,DrugBAN,human,seed_6,target,base,U+E,,
+validation,DrugBAN,human,seed_7,target,base,U+E,0.107955,-0.558712
+validation,DrugBAN,human,seed_8,target,base,U+E,0.333333,0.19444399999999998
+validation,PACE,bindingdb,seed_4,target,base,U+E,0.348439,0.0897
+validation,PACE,bindingdb,seed_5,target,base,U+E,0.519673,0.13801400000000008
+validation,PACE,bindingdb,seed_6,target,base,U+E,0.31248,0.10346749999999999
+validation,PACE,bindingdb,seed_7,target,base,U+E,0.2548745,-0.026330500000000034
+validation,PACE,bindingdb,seed_8,target,base,U+E,0.26470075,-0.036759750000000035
+validation,PACE,biosnap,seed_4,target,base,U+E,0.3130455,0.04484549999999998
+validation,PACE,biosnap,seed_5,target,base,U+E,0.18424075,0.035733249999999994
+validation,PACE,biosnap,seed_6,target,base,U+E,0.23061925,0.03525600000000001
+validation,PACE,biosnap,seed_7,target,base,U+E,0.11619825,-0.015579750000000003
+validation,PACE,biosnap,seed_8,target,base,U+E,0.31716975000000003,0.10535875000000003
+validation,PACE,human,seed_4,target,base,U+E,0.83597875,0.179894
+validation,PACE,human,seed_5,target,base,U+E,0.5843585,0.2210585
+validation,PACE,human,seed_6,target,base,U+E,,
+validation,PACE,human,seed_7,target,base,U+E,0.675,0.5678105
+validation,PACE,human,seed_8,target,base,U+E,0.541667,0.29942100000000005
+validation,TAPB,bindingdb,seed_4,target,base,U+E,,
+validation,TAPB,bindingdb,seed_5,target,base,U+E,0.37461125,-0.02826075
+validation,TAPB,bindingdb,seed_6,target,base,U+E,,
+validation,TAPB,bindingdb,seed_7,target,base,U+E,0.37671925,0.015981750000000017
+validation,TAPB,bindingdb,seed_8,target,base,U+E,0.47676275,0.058204000000000033
+validation,TAPB,biosnap,seed_4,target,base,U+E,0.15191274999999999,0.0023207499999999825
+validation,TAPB,biosnap,seed_5,target,base,U+E,0.10529849999999999,-0.07685425000000001
+validation,TAPB,biosnap,seed_6,target,base,U+E,0.109318,-0.11836274999999999
+validation,TAPB,biosnap,seed_7,target,base,U+E,0.25843475,-0.023890500000000037
+validation,TAPB,biosnap,seed_8,target,base,U+E,0.18996525,0.022357250000000023
+validation,TAPB,human,seed_4,target,base,U+E,0.479167,-0.0707064999999999
+validation,TAPB,human,seed_5,target,base,U+E,1.0,0.911111
+validation,TAPB,human,seed_6,target,base,U+E,0.5324073333333333,0.325608
+validation,TAPB,human,seed_7,target,base,U+E,0.46408200000000005,-0.04350533333333323
+validation,TAPB,human,seed_8,target,base,U+E,0.247619,0.031745999999999996
+validation,DrugBAN,bindingdb,seed_4,target,base,U+P+E,0.49896050000000003,0.06096275000000001
+validation,DrugBAN,bindingdb,seed_5,target,base,U+P+E,0.285781,0.01643325000000001
+validation,DrugBAN,bindingdb,seed_6,target,base,U+P+E,0.337446,0.13964900000000002
+validation,DrugBAN,bindingdb,seed_7,target,base,U+P+E,0.42730275,0.02458325
+validation,DrugBAN,bindingdb,seed_8,target,base,U+P+E,0.4718605,0.1323535
+validation,DrugBAN,biosnap,seed_4,target,base,U+P+E,0.431308,0.10389400000000004
+validation,DrugBAN,biosnap,seed_5,target,base,U+P+E,0.35447425,0.07149499999999998
+validation,DrugBAN,biosnap,seed_6,target,base,U+P+E,0.325448,-0.03890474999999999
+validation,DrugBAN,biosnap,seed_7,target,base,U+P+E,0.545457,0.24390724999999996
+validation,DrugBAN,biosnap,seed_8,target,base,U+P+E,0.39662575,0.09839575
+validation,DrugBAN,human,seed_4,target,base,U+P+E,,
+validation,DrugBAN,human,seed_5,target,base,U+P+E,,
+validation,DrugBAN,human,seed_6,target,base,U+P+E,,
+validation,DrugBAN,human,seed_7,target,base,U+P+E,0.125,-0.541667
+validation,DrugBAN,human,seed_8,target,base,U+P+E,0.75,0.611111
+validation,PACE,bindingdb,seed_4,target,base,U+P+E,0.41182625,0.15308725
+validation,PACE,bindingdb,seed_5,target,base,U+P+E,0.506856,0.125197
+validation,PACE,bindingdb,seed_6,target,base,U+P+E,0.23144699999999999,0.022434499999999996
+validation,PACE,bindingdb,seed_7,target,base,U+P+E,0.27492649999999996,-0.006278500000000076
+validation,PACE,bindingdb,seed_8,target,base,U+P+E,0.2757855,-0.025675000000000003
+validation,PACE,biosnap,seed_4,target,base,U+P+E,0.30537725,0.037177249999999995
+validation,PACE,biosnap,seed_5,target,base,U+P+E,0.1931525,0.04464499999999999
+validation,PACE,biosnap,seed_6,target,base,U+P+E,0.222386,0.027022750000000012
+validation,PACE,biosnap,seed_7,target,base,U+P+E,0.09246875,-0.039309250000000004
+validation,PACE,biosnap,seed_8,target,base,U+P+E,0.25073375,0.03892274999999998
+validation,PACE,human,seed_4,target,base,U+P+E,0.9382935,0.28220875
+validation,PACE,human,seed_5,target,base,U+P+E,0.80416675,0.44086675000000003
+validation,PACE,human,seed_6,target,base,U+P+E,,
+validation,PACE,human,seed_7,target,base,U+P+E,0.875,0.7678105
+validation,PACE,human,seed_8,target,base,U+P+E,0.719444,0.477198
+validation,TAPB,bindingdb,seed_4,target,base,U+P+E,,
+validation,TAPB,bindingdb,seed_5,target,base,U+P+E,0.34006525,-0.06280675000000002
+validation,TAPB,bindingdb,seed_6,target,base,U+P+E,,
+validation,TAPB,bindingdb,seed_7,target,base,U+P+E,0.44005525,0.07931775000000002
+validation,TAPB,bindingdb,seed_8,target,base,U+P+E,0.47595475,0.057396
+validation,TAPB,biosnap,seed_4,target,base,U+P+E,0.148291,-0.0013009999999999966
+validation,TAPB,biosnap,seed_5,target,base,U+P+E,0.10437425,-0.0777785
+validation,TAPB,biosnap,seed_6,target,base,U+P+E,0.0801885,-0.14749225
+validation,TAPB,biosnap,seed_7,target,base,U+P+E,0.26945600000000003,-0.012869249999999999
+validation,TAPB,biosnap,seed_8,target,base,U+P+E,0.16168225,-0.00592574999999998
+validation,TAPB,human,seed_4,target,base,U+P+E,0.35277749999999997,-0.19709599999999994
+validation,TAPB,human,seed_5,target,base,U+P+E,0.5,0.411111
+validation,TAPB,human,seed_6,target,base,U+P+E,0.7685186666666667,0.5617193333333333
+validation,TAPB,human,seed_7,target,base,U+P+E,0.49589866666666665,-0.011688666666666625
+validation,TAPB,human,seed_8,target,base,U+P+E,0.611111,0.395238
+validation,DrugBAN,bindingdb,seed_4,target,base,Validation-selected PAUSE,0.5128535000000001,0.07485575000000005
+validation,DrugBAN,bindingdb,seed_5,target,base,Validation-selected PAUSE,0.41971825,0.15037050000000002
+validation,DrugBAN,bindingdb,seed_6,target,base,Validation-selected PAUSE,0.197797,0.0
+validation,DrugBAN,bindingdb,seed_7,target,base,Validation-selected PAUSE,0.4027195,0.0
+validation,DrugBAN,bindingdb,seed_8,target,base,Validation-selected PAUSE,0.4813163333333333,0.1418093333333333
+validation,DrugBAN,biosnap,seed_4,target,base,Validation-selected PAUSE,0.40033925,0.07292525
+validation,DrugBAN,biosnap,seed_5,target,base,Validation-selected PAUSE,0.374056,0.09107674999999998
+validation,DrugBAN,biosnap,seed_6,target,base,Validation-selected PAUSE,0.42607625,0.06172349999999999
+validation,DrugBAN,biosnap,seed_7,target,base,Validation-selected PAUSE,0.5252555,0.22370574999999998
+validation,DrugBAN,biosnap,seed_8,target,base,Validation-selected PAUSE,0.39306525000000003,0.09483525000000004
+validation,DrugBAN,human,seed_4,target,base,Validation-selected PAUSE,,
+validation,DrugBAN,human,seed_5,target,base,Validation-selected PAUSE,,
+validation,DrugBAN,human,seed_6,target,base,Validation-selected PAUSE,,
+validation,DrugBAN,human,seed_7,target,base,Validation-selected PAUSE,0.666667,0.0
+validation,DrugBAN,human,seed_8,target,base,Validation-selected PAUSE,0.75,0.611111
+validation,PACE,bindingdb,seed_4,target,base,Validation-selected PAUSE,0.32625625,0.06751725000000003
+validation,PACE,bindingdb,seed_5,target,base,Validation-selected PAUSE,0.45413175,0.07247275000000003
+validation,PACE,bindingdb,seed_6,target,base,Validation-selected PAUSE,0.3142765,0.10526400000000002
+validation,PACE,bindingdb,seed_7,target,base,Validation-selected PAUSE,0.321062,0.039856999999999976
+validation,PACE,bindingdb,seed_8,target,base,Validation-selected PAUSE,0.316841,0.015380499999999964
+validation,PACE,biosnap,seed_4,target,base,Validation-selected PAUSE,0.38686675000000004,0.11866675000000004
+validation,PACE,biosnap,seed_5,target,base,Validation-selected PAUSE,0.2458145,0.09730699999999998
+validation,PACE,biosnap,seed_6,target,base,Validation-selected PAUSE,0.2116095,0.016246250000000018
+validation,PACE,biosnap,seed_7,target,base,Validation-selected PAUSE,0.131778,0.0
+validation,PACE,biosnap,seed_8,target,base,Validation-selected PAUSE,0.29270625,0.08089525
+validation,PACE,human,seed_4,target,base,Validation-selected PAUSE,0.970701,0.31461625000000004
+validation,PACE,human,seed_5,target,base,Validation-selected PAUSE,0.835516,0.472216
+validation,PACE,human,seed_6,target,base,Validation-selected PAUSE,,
+validation,PACE,human,seed_7,target,base,Validation-selected PAUSE,0.875,0.7678105
+validation,PACE,human,seed_8,target,base,Validation-selected PAUSE,0.644444,0.40219800000000006
+validation,TAPB,bindingdb,seed_4,target,base,Validation-selected PAUSE,0.916667,0.0
+validation,TAPB,bindingdb,seed_5,target,base,Validation-selected PAUSE,0.42443949999999997,0.02156749999999996
+validation,TAPB,bindingdb,seed_6,target,base,Validation-selected PAUSE,,
+validation,TAPB,bindingdb,seed_7,target,base,Validation-selected PAUSE,0.4294335,0.06869600000000003
+validation,TAPB,bindingdb,seed_8,target,base,Validation-selected PAUSE,0.462658,0.044099250000000034
+validation,TAPB,biosnap,seed_4,target,base,Validation-selected PAUSE,0.19198575,0.04239375000000001
+validation,TAPB,biosnap,seed_5,target,base,Validation-selected PAUSE,0.22408825,0.04193549999999999
+validation,TAPB,biosnap,seed_6,target,base,Validation-selected PAUSE,0.30173825,0.0740575
+validation,TAPB,biosnap,seed_7,target,base,Validation-selected PAUSE,0.31217875,0.029853499999999977
+validation,TAPB,biosnap,seed_8,target,base,Validation-selected PAUSE,0.202092,0.034484000000000015
+validation,TAPB,human,seed_4,target,base,Validation-selected PAUSE,0.5498734999999999,0.0
+validation,TAPB,human,seed_5,target,base,Validation-selected PAUSE,1.0,0.911111
+validation,TAPB,human,seed_6,target,base,Validation-selected PAUSE,0.8043623333333333,0.597563
+validation,TAPB,human,seed_7,target,base,Validation-selected PAUSE,0.5512313333333333,0.043644000000000016
+validation,TAPB,human,seed_8,target,base,Validation-selected PAUSE,0.487037,0.27116399999999996
