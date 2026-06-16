@@ -1,0 +1,4 @@
+dataset,policy_rows,mean_n_test,mean_high_conf_positive,median_high_conf_positive,mean_residual_candidates,median_residual_candidates,mean_residual_errors,median_residual_errors,p25_residual_errors,p75_residual_errors,mean_residual_error_prevalence,median_residual_error_prevalence
+bindingdb,120,1779.0,123.8,140.0,105.23333333333333,119.0,25.633333333333333,16.5,1.75,39.25,0.18799131844071568,0.1878588432992578
+biosnap,120,907.0,175.53333333333333,175.0,149.13333333333333,147.5,18.116666666666667,16.0,10.0,26.25,0.11855196006529184,0.09740923189199052
+human,120,311.0,69.43333333333334,81.0,59.06666666666667,68.0,9.25,9.5,3.75,13.0,0.1328448218926528,0.13908138597904915
