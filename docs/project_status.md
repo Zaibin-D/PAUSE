@@ -1,6 +1,6 @@
 # PAUSE Project Status
 
-Last updated: 2026-06-15
+Last updated: 2026-06-16
 
 ## 1. Current Objective
 
@@ -938,6 +938,53 @@ Equal-budget and transfer results are robustness and operational validation,
 not feature ablations. They should be reported separately from the primary
 profile and permutation ablations.
 
+### Completed Manuscript-Ready Primary Ablation Matrix
+
+The primary ablation matrix has now been generated and is ready for manuscript
+use. Outputs are stored under:
+
+```text
+audit_framework/results/ablation/
+```
+
+The main manuscript-facing file is:
+
+```text
+audit_framework/results/ablation/primary_ablation_matrix_manuscript.csv
+```
+
+Additional numeric, compact, cluster-level, and spreadsheet exports are:
+
+```text
+primary_ablation_matrix_numeric.csv
+primary_ablation_matrix_compact.csv
+primary_ablation_summary_long.csv
+primary_ablation_cluster_runs.csv
+primary_ablation_matrix.xlsx
+README.md
+```
+
+Cells report absolute residual error-detection AUPRC followed by the delta
+against U. Confidence intervals are 20,000-resample stratified bootstraps over
+model-dataset strata after averaging the four policies within each
+model-dataset-seed-axis cluster.
+
+Manuscript-ready primary ablation matrix:
+
+| Profile | Drug validation | Drug test | Target validation | Target test |
+|---|---|---|---|---|
+| U | 0.310 (ref.) | 0.319 (ref.) | 0.323 (ref.) | 0.319 (ref.) |
+| P | 0.380 (+0.069; 95% CI +0.008 to +0.148) | 0.340 (+0.028; 95% CI -0.019 to +0.082) | 0.380 (+0.071; 95% CI -0.042 to +0.184) | 0.340 (+0.028; 95% CI -0.017 to +0.080) |
+| U+P | 0.371 (+0.061; 95% CI +0.001 to +0.137) | 0.340 (+0.028; 95% CI -0.020 to +0.082) | 0.380 (+0.071; 95% CI -0.040 to +0.182) | 0.340 (+0.028; 95% CI -0.017 to +0.080) |
+| U+E | 0.524 (+0.214; 95% CI +0.140 to +0.299) | 0.485 (+0.173; 95% CI +0.085 to +0.260) | 0.372 (+0.063; 95% CI -0.084 to +0.192) | 0.486 (+0.174; 95% CI +0.088 to +0.258) |
+| U+P+E | 0.523 (+0.212; 95% CI +0.134 to +0.303) | 0.478 (+0.166; 95% CI +0.079 to +0.253) | 0.417 (+0.109; 95% CI -0.070 to +0.286) | 0.489 (+0.177; 95% CI +0.093 to +0.260) |
+| Validation-selected PAUSE | 0.523 (+0.212; 95% CI +0.145 to +0.315) | 0.467 (+0.148; 95% CI +0.066 to +0.240) | 0.494 (+0.171; 95% CI +0.057 to +0.325) | 0.361 (+0.042; 95% CI +0.007 to +0.082) |
+
+This table should be used as the primary profile ablation in the BIBM
+manuscript rewrite. The P/E permutation results remain a separate
+validation-only falsification analysis and should not be merged into this
+profile matrix.
+
 ### Current Scientific Claim
 
 The strongest evidence-supported claim is:
@@ -1018,9 +1065,9 @@ performed while writing:
 
 1. Rebuild the manuscript argument around equal-budget frozen-predictor audit,
    not the obsolete M/S story.
-2. Produce one manuscript-ready primary ablation matrix containing U, P, U+P,
-   U+E, U+P+E, and validation-selected PAUSE for validation and test under both
-   grouping axes.
+2. Use the completed manuscript-ready primary ablation matrix from
+   `audit_framework/results/ablation/` for U, P, U+P, U+E, U+P+E, and
+   validation-selected PAUSE under both grouping axes.
 3. Report P/E permutation separately from the primary profile ablation.
 4. HGB heterogeneity audit: completed using existing outputs. The analysis
    covers validation/test direction, model/dataset/seed strata, leave-one-domain
@@ -1051,7 +1098,7 @@ reveals a specific reviewer-critical gap and sufficient time remains.
 The recommended immediate order is:
 
 1. freeze the current experimental claims and tables;
-2. build manuscript figures and the primary ablation table;
+2. build manuscript figures and use the completed primary ablation table;
 3. rewrite Methods and Results from the frozen implementation;
 4. rewrite Abstract, Introduction, and Discussion around the supported claim;
 5. run mock review, statistical consistency, citation, and reproducibility
