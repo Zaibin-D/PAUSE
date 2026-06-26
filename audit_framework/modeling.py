@@ -189,7 +189,12 @@ def _transform_evidence_probabilities(
     output: dict[str, pd.Series] = {}
     for name, column in (("prior", "s_prior"),):
         logits = _numeric(table, column)
-        raw = _raw_channel_probability(table, column)
+        exported = _numeric(table, "p_prior").clip(0.0, 1.0)
+        raw = (
+            exported
+            if exported.notna().any()
+            else _raw_channel_probability(table, column)
+        )
         model = calibrators.get(name)
         valid = logits.notna()
         probability = raw.copy()

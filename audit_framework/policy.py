@@ -189,6 +189,12 @@ def select_one_standard_error(
         errors="coerce",
     )
     finite = work.loc[work["validation_fold_mean_auprc"].notna()].copy()
+    if "validation_finite_folds" in finite:
+        fold_counts = pd.to_numeric(
+            finite["validation_finite_folds"],
+            errors="coerce",
+        )
+        finite = finite.loc[fold_counts.ge(2)].copy()
     fallback = work.loc[work["profile"].astype(str) == fallback_profile]
 
     if finite.empty:
